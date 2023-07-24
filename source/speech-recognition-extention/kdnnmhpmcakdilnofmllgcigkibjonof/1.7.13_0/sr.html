@@ -1,0 +1,315 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html lang="en"> <!-- Version 1.5.6 - Added lang="en" and data-lang attributes throughout below -->
+  <head>
+	<meta charset="utf-8"/> <!-- Version 1.5.6 - Added because Spanish accents were not displaying correctly -->
+    <title>Speech Recognition Anywhere</title>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <link href="social.css" rel="stylesheet" type="text/css">
+	<link href="sr.css" rel="stylesheet" type="text/css">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+    
+    <style>
+    	
+
+    </style>
+  </head>
+<body>
+<script id="sra_script"></script> <!-- Version 1.7.0b - Inject script by changing innerHTML. Manifest V3 blocked it from working -->	
+<h1><a href="https://chrome.google.com/webstore/detail/speech-recognition-anywhe/kdnnmhpmcakdilnofmllgcigkibjonof" class="cws_link"> <!-- Version 1.4.9 - Added class="cws_link" // Version 1.7.2 - Removed data-lang-href="cws_link" -->
+	<img id="icon" src="images/microphone38.png"><span 
+		class="title" id="title" data-lang="title">Speech Recognition Anywhere</span> 
+		<span id="license_msg"></span></a>
+	<span class="free_trial_msg" style="vertical-align:top;"> - 
+		<a style="vertical-align:top;text-decoration: underline;" 
+		href="https://www.seabreezecomputers.com/speech/subscription/" data-lang-href="buy_link"
+		target="_blank"><span data-lang="buy">Buy Upgrade</span></a> <!-- Version 1.5.4f - Added Buy and text-decoration: underline; -->
+	</span>
+</h1>
+
+	<div data-lang="days_left" class="offscreen">days left</div> <!-- Version 1.5.6 -->
+	<div data-lang="signin" class="offscreen">Sign in to browser or enter Order Number.</div> <!-- Version 1.5.9 -->
+	<div data-lang="appDesc" class="offscreen">Use Voice Recognition to fill out forms and dictate email with speech to text. Control the Internet with custom voice commands!</div> <!-- Version 1.7.2 -->
+	<div data-lang="Free" class="offscreen">Free</div> <!-- Version 1.7.2 -->
+	<div data-lang="FREE_TRIAL" class="offscreen">FREE TRIAL</div> <!-- Version 1.7.2 -->
+	<div data-lang="FREE_TRIAL_EXPIRED" class="offscreen">FREE TRIAL EXPIRED</div> <!-- Version 1.7.2 -->
+	<div data-lang="FULL" class="offscreen">FULL</div> <!-- Version 1.7.2 -->
+	<div data-lang="speech_recognition_error" class="offscreen">Speech recognition error detected: </div> <!-- Version 1.7.2 -->
+	<div data-lang="network_error" class="offscreen">Reinstalling Chrome or doing a Chrome <a href='https://support.google.com/chrome/answer/3296214'>Reset</a> may help fix this error.</div> <!-- Version 1.7.2 -->
+	<div data-lang="chrome_pages_error" class="offscreen">NOTE: Extensions are not allowed on special chrome:// or edge:// pages or the Chrome Webstore or Edge Add-Ons page such as the page on the last tab.</div> <!-- Version 1.7.2 -->
+	<div data-lang="chrome_runtime_error" class="offscreen">. NOTE: You must reload the web page you were trying to use speech recognition on before this extension will work on it.</div> <!-- Version 1.7.2 -->
+	
+	<div data-lang="pause_for_audio_msg" class="offscreen"> Speech Recognition is paused until all tabs have stopped playing audio. (See settings). </div> <!-- Version 1.7.6 -->
+	<div data-lang="wakeup_phrase_msg" class="offscreen"> Listening for wakeup phrase: </div> <!-- Version 1.7.6 -->
+	<div data-lang="disable_speech2text_msg" class="offscreen"> Speech to text (dictation) is disabled in Settings. </div> <!-- Version 1.7.6 -->
+	<div data-lang="disable_commands_msg" class="offscreen"> Voice commands are disabled in Settings. </div> <!-- Version 1.7.6 -->
+	
+	<div id="sr_sound_level_container"><div id="sr_sound_level"></div></div>
+	<div class="error" id="error"></div>
+	<div data-lang="initializing" id="sr_init">Initializing...</div> <!-- Version 1.5.9 - Put initializing in new div -->
+	<div id="sr_msg"></div> <!-- Version 1.1.0 - Added "Initializing..." -->
+	
+	<iframe id="speech_iframe" src="iframe.html" scrolling="no"></iframe> <!-- Version 1.7.6 -->
+
+	<div id="info_box"></div> <!-- Version 1.5.2 -->
+	<!--<iframe id="sra_sale_iframe" width="80%" style="height:3em" frameborder="1" src="https://www.seabreezecomputers.com/speech/iframe/sale.php" 
+		class="free_trial_msg" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="yes" allowfullscreen="true"></iframe>
+	--> <!-- Version 1.6.6 - Removed sra_sale_iframe. It is now combined with sra_news_iframe -->
+	<iframe id="sra_news_iframe" width="80%" style="height:4.5em" frameborder="1" src="https://www.seabreezecomputers.com/speech/iframe" 
+		marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="yes" allowfullscreen="true"></iframe>
+		<!-- Version 1.6.5 - Changed iframe urls above from http:// to https:// -->
+	<p><span data-lang="sr_language">Current speech recognition language:</span> <span id="sr_language"></span>. 
+	<span data-lang="change_in_Settings">Change in Settings.</span>
+	<!--<p><button id="settings_btn" class="submenu_btn" data-menu="settings_div" data-lang="settings_btn">&#9654; Settings</button>-->
+	<details> <!-- Version 1.5.6 - Removed menu button above and added details and summary tags -->
+	<summary class="submenu_btn" data-lang="settings_btn">Settings</summary>
+	<div id="settings_div" class="submenu">
+		<form name="settings_form">
+			<p><label><span data-lang="language">Language:</span> <select name="select_language"></select></label>&nbsp;&nbsp;&nbsp;
+			<span data-lang="default_language">Default language detected as: </span><span id="detected_language"></span>
+		<div class="free_trial_msg" data-lang="free_trial_msg_settings">
+			<b>The following settings are only available in the Full version of "<span class="title"></span>".<br>
+			<a href="https://www.seabreezecomputers.com/speech/subscription/"
+			data-lang-href="buy_link">Purchase Upgrade to <span class="title"></span> Full</a></b><br> <!-- Version 1.5.4 - Added Purchase -->
+			(Note: If you recently purchased "<span class="title"></span> Full" then 
+			<a data-lang-href="support_free_trial_link" href="https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial">
+			See Help</a>)
+		</div>
+			<p><label><input type="checkbox" name="start_with_chrome"> 
+			<span data-lang="start_with_chrome">Start when the browser starts</span></label>
+			<div>
+				<span style='display:table-cell; vertical-align:middle; border: 1px solid #3333ff'>
+					<p><label><input type="checkbox" name="start_in_background"> 
+					<span data-lang="start_in_background">Start in the background</span></label></p>
+					<p><label><input type="checkbox" name="click_to_close"> 
+					<span data-lang="click_to_close">Click extension icon a second time to close the extension</span></label></p>
+				</span>
+				<span style='display:table-cell; vertical-align:middle;'>
+					<p><--- <span data-lang="shortcuts_key_msg">Can be used with a shortcut key setup at</span>
+					<a href="#" id="shortcuts_url">chrome://extensions/shortcuts</a> <!-- Version 1.4.0 - Added <a href... -->
+					<span id='shortcuts'></span></p> <!-- Version 1.4.0 -->
+				</span>
+			</div>
+			<p><label><input type="checkbox" name="submit_search_fields"> 
+			<span data-lang="submit_search_fields">Submit search fields automatically</span></label>
+			<p><label><input type="checkbox" name="pause_for_audio"> 
+			<span data-lang="pause_for_audio">Pause "<span class="title"></span>" if audio is playing in a tab</span></label>
+			<p><label><input type="checkbox" name="virtual_assistant_mode"> 
+			<span data-lang="virtual_assistant_mode">Virtual Assistant Mode</span></label>
+			<div class="subsubmenu" data-lang="virtual_assistant_mode_msg">(In Virtual Assistant Mode if this tab is active or a tab with Google is active then speech spoken that is not in the commands list will be sent to "Ok Google" Virtual Assistant.)</div>
+			<p><label><input type="checkbox" name="prevent_system_sleep"> 
+			<span data-lang="prevent_system_sleep">Prevent system from sleeping while "<span class="title"></span>" is listening</span></label>
+			<div class="subsubmenu" data-lang="prevent_system_sleep_msg">Note: At this time extensions can't interrupt a screen saver but they can turn the screen back on when 
+				power management turns off the screen. So if you want the screen to turn back on with your voice then you will need to disable your
+				screen saver.</div>
+			<p><label><input type="checkbox" name="prevent_display_sleep"> 
+			<span data-lang="prevent_display_sleep">Prevent screen from sleeping while "<span class="title"></span>" is listening</span></label>
+			<p><label><input type="checkbox" name="use_wakeup_phrase"> 
+			<span data-lang="use_wakeup_phrase">Use Voice Activation Wake Up phrase: </span></label>
+			<input type="text" name="wakeup_phrase"> <span data-lang="wakeup_phrase">(Examples: 'Ok Google' or 'Computer')</span>
+			<div class="subsubmenu">
+				<p><label><input type="checkbox" name="wakeup_beep"> 
+				<span data-lang="wakeup_beep">Play beep tone when wake up phrase is detected</span></label>
+				<p><label><input type="checkbox" name="use_wakeup_timeout"> 
+				<span data-lang="use_wakeup_timeout">Only require wake up phrase again if there is no speech for more than 20 seconds</span></label>
+				<p><label><input type="checkbox" name="wakeup_low_beep"> 
+				<span data-lang="wakeup_low_beep">Play low beep tone when looking for wake up phrase again</span></label>
+				<p><label><input type="checkbox" name="end_beep"> 
+				<span data-lang="end_beep">Play beep after speech is detected</span></label>
+			</div>
+			<p><label><input type="checkbox" name="disable_interim"> 
+			<span data-lang="disable_interim">Disable yellow speech bubble (Only final speech will display)</span></label>
+			<p><label><input type="checkbox" name="disable_speech2text"> 
+			<span data-lang="disable_speech2text">Disable Speech to text (Only Voice Commands will work)</span></label>
+			<p><label><input type="checkbox" name="disable_commands"> 
+			<span data-lang="disable_commands">Disable Voice Commands (Only Speech to text will work)</span></label>
+			<p><label><input type="checkbox" name="disable_autofocus"> 
+			<span data-lang="disable_autofocus">Disable Auto Focus on nearest text box when speech is heard</span></label>
+			<p><label><input type="checkbox" name="auto_punctuation"> 
+			<span data-lang="auto_punctuation">Auto Punctuation</span></label> - 
+			<a href="https://youtu.be/-4X4FsBfsbE" target="_blank" data-lang-href="auto_punctuation_video_link"
+			data-lang="auto_punctuation_video">See Instruction Video</a> <!-- Version 1.2.7 --> 
+			<p><label><input type="checkbox" name="remove_auto_capitalize"> 
+			<span data-lang="remove_auto_capitalize">Remove Google's Auto Capitalization</span></label>
+			<p><label><input type="checkbox" name="disable_edge_auto_punctuation"> 
+			<span data-lang="disable_edge_auto_punctuation">Disable Microsoft Edge Chromium Auto Punctuation</span></label> <!-- Version 1.6.3 - Fixed data-lang attr -->
+			<p><label><input type="checkbox" name="always_lowercase"> 
+			<span data-lang="always_lowercase">Always lowercase all text</span></label>
+			<p><label><input type="checkbox" name="use_keypresses"> <!-- Version 1.7.7 -->
+			<span data-lang="use_keypresses">Use key presses to send text (Works with some websites that block paste)</span></label>
+			
+			<p><label><input type="checkbox" name="chrome_windows"> 
+			<span data-lang="chrome_windows">Allow Speech Recognition in other Chrome Windows</span></label>
+			<p><label><input type="checkbox" name="disable_auto_gain_control"> 
+			<span data-lang="disable_auto_gain_control">Disable Auto Gain Control (Check this if your microphone volume keeps changing)</span></label>
+			<p><label><input type="checkbox" name="disable_continuous_recognition"> <!-- Version 1.6.3 -->
+			<span data-lang="disable_continuous_recognition">Disable continuous speech recognition mode (Works better for some users but not for others)</span></label>
+			
+			
+			<p><b data-lang="tts_settings">Text-To-Speech Settings</b>
+			<div class="subsubmenu">
+				<p><label><span data-lang="select_voice" class="tts_box">Voice: </span><select name="select_voice"></select></label>
+				<p><label><span data-lang="tts_pitch" class="tts_box">Pitch: </span><input name="tts_pitch" type="range" value="1" min="0" max="2" step="0.1"><span id="pitch_dis">1</span></label>
+				<p><label><span data-lang="tts_rate" class="tts_box">Rate: </span><input name="tts_rate" type="range" value="1" min="0.1" max="10" step="0.1"><span id="rate_dis">1</span></label> <!-- Version 1.3.2 - Had to change to 10 for Microsoft Voice to save rate -->
+				<p><button name="tts_test_btn" data-lang="tts_test_btn">Test</button>
+				<span data-lang="tts_test_speech" class="offscreen">This is a test.</span> <!-- Version 1.5.7 -->
+				<p><label><input type="checkbox" name="tts_highlight"> 
+				<span data-lang="tts_highlight">Highlight text being read</span></label>
+				<p><label><input type="checkbox" name="tts_scroll"> 
+				<span data-lang="tts_scroll">Scroll to text being read</span></label>
+				<p><label><input type="checkbox" name="tts_simple"> 
+				<span data-lang="tts_simple">Simple Mode (Turns off verbose reading of ARIA roles and Tag names like "button" and "hyperlink")</span></label>
+			</div>
+			<p><b data-lang="license">License</b> <!-- Version 1.4.0 -->
+			<div class="subsubmenu">
+				<p><span data-lang="order_id">Order Number: </span><input type="text" name="order_id"> 
+				<button name="check_order" data-lang="check_order">Check</button> 
+				<span data-lang="order_status">Status: </span><input type="text" name="status" class="status" readonly> <!-- Version 1.4.1 - From fontsize changer added class="status" -->
+				<!--<br>View your paypal subscriptions at: 
+				<a href="https://www.paypal.com/myaccount/autopay/" target="_blank">paypal.com/myaccount/autopay/</a>-->
+				<!-- Or   https://www.paypal.com/cgi-bin/webscr?cmd=_manage-paylist -->
+			</div>
+		</form>
+	</div>
+	</details>
+	<!--<p><button id="instructions_btn" class="submenu_btn" data-menu="instructions_div" data-lang="instructions_btn">&#9654; Instructions</button>-->
+	<details open> <!-- Version 1.5.6 - Removed menu button above and added details and summary tags -->
+	<summary class="submenu_btn" data-lang="instructions_btn">Instructions</summary>
+	<div id="instructions_div" class="submenu">	
+		<ol data-lang="instructions_div">
+			<li>For speech recognition to work on any page keep this tab open in the background.</li>
+			<li>Switch to any other tab and start talking.</li>
+			<li>To stop speech recognition close this tab.</li>
+		</ol>
+		&nbsp;&nbsp;&nbsp;
+		<span><a href="https://youtu.be/E11-p7quCjA" data-lang-href="instruction_video_link" 
+		data-lang="instruction_video">Instruction Video</a></span> <!-- Version 1.4.9 // Version 1.7.2 - changed link to new video -->
+		&nbsp;&nbsp;&nbsp; &#9679; &nbsp;&nbsp;&nbsp;
+		<span><a href="https://www.seabreezecomputers.com/speech/support/" data-lang-href="support_link"
+		target="_blank" data-lang="support">Support</a></span> <!-- Version 1.4.9 -->
+
+		<div class="free_trial_msg" data-lang="free_trial_msg">
+			<a href="https://www.seabreezecomputers.com/speech/subscription/"
+			data-lang-href="buy_link">Purchase Upgrade to <span class="title"></span> Full</a></b><br> <!-- Version 1.5.4 - Addded Purchase -->
+			(Note: If you recently purchased "<span class="title"></span> Full" then 
+			<a data-lang-href="support_free_trial_link" href="https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial">
+			See Help</a>)
+		</div>
+	</div>
+	</details>
+	<!--<p><button id="commands_btn" class="submenu_btn" data-menu="commands_div" data-lang="commands_btn">&#9654; Commands</button>-->
+	<details> <!-- Version 1.5.6 - Removed menu button above and added details and summary tags -->
+	<summary class="submenu_btn" data-lang="commands_btn">Commands</summary>
+	<div id="commands_div" class="submenu" translate="no">	</div> <!-- Verison 1.5.2 - Added translate="no" so Google translate will not translate commands -->
+	</details>
+	<!--<p><button id="custom_commands_btn" class="submenu_btn"
+	data-menu="custom_commands_div" data-lang="custom_commands_btn">&#9654; Custom Commands</button>-->
+	<details> <!-- Version 1.5.6 - Removed menu button above and added details and summary tags -->
+	<summary class="submenu_btn" data-lang="custom_commands_div">Custom Commands</summary>
+	<div id="custom_commands_div" class="submenu">
+		<p data-lang="custom_commands_msg">* For help with custom commands go to 
+		<a href="https://www.seabreezecomputers.com/speech/#custom" data-lang-href="custom_commands_link"
+		target="_blank">https://www.seabreezecomputers.com/speech/#custom</a>
+		</p>	
+		<span class="free_trial_msg" data-lang="custom_commands_free_trial_msg">
+			<b>Adding custom voice commands is only available in the Full version of "<span class="title"></span>".<br>
+			<a href="https://www.seabreezecomputers.com/speech/subscription/"
+			data-lang-href="buy_link">Upgrade to <span class="title"></span> Full</a></b><br>
+			(Note: If you recently purchased "<span class="title"></span> Full" then 
+			<a data-lang-href="support_free_trial_link" href="https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial">
+			See Help</a>)
+		</span>
+		<form name='custom_commands_form'>
+		<button name='add1' title='Add Custom Voice Command' data-lang="add_btn">+ Add</button>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<button name='export' title='Export Custom Commands' data-lang="export_btn">Export</button>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<button name='import_btn' title='Import Custom Commands' data-lang="import_btn">Import</button>
+		<div style='display:none' id='import_div'>
+		<span><b>Step 1</b><br />
+			<label><input type='radio' name='import_type' value='append' checked>
+			<span data-lang="import_type_append">Append to Custom Commands</span></label><br \>
+			<label><input type='radio' name='import_type' value='overwrite'>
+			<span data-lang="import_type_overwrite">Overwrite Custom Commands</span></label><br \>
+		</span>
+		<span><b>Step 2</b><br />
+			<input name='import_file' type='file' accept='text/plain'>
+			<button name='import_start' title='Start Import' data-lang="import_start">Start Import</button> <span id='import_error'></span>
+		</span></div>
+		
+		<div id="custom_commands_div2"> </div> <!-- This is where the custom commands will print -->
+		
+		<button name='add' title='Add Custom Voice Command' data-lang="add_btn">+ Add</button>
+		</form>
+	</div>
+	</details>
+	<!--<p><button id="terms_btn" class="submenu_btn" data-menu="terms_div" data-lang="terms_btn">&#9654; Terms of Use</button>-->
+	<details> <!-- Version 1.5.6 - Removed menu button above and added details and summary tags -->
+	<summary class="submenu_btn" data-lang="terms_btn">Terms of Use</summary>
+	<div id="terms_div" class="submenu" data-lang="terms_div">
+		<p>By using this software product you agree to be bound by the terms of use available at 
+		<a href="https://www.seabreezecomputers.com/speech/terms/" data-lang-href="terms_link"
+		target="_blank">https://www.seabreezecomputers.com/speech/terms/</a>
+		and to the terms below: 
+		<p>This extension uses the Web Speech API built into some browsers 
+			(such as Google's Web Speech API or Microsoft Edge's Web Speech API) for speech recognition so if the speech recognition
+			does not work well then you will have to talk to the browser maker about that. Sea Breeze Computers makes 
+			no warranties as to the performance of this product or the continued operation of the speech recognition service.</p>
+		<p>DISCLAIMER OF WARRANTIES
+		<p>WE DO NOT GUARANTEE THAT THE PRODUCT WILL OPERATE THE SAME WAY IN THE FUTURE. YOU WILL NOT BE ENTITLED TO A REFUND OR A CREDIT. 
+		THIS PRODUCT IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND. WE DISCLAIM ALL WARRANTIES, 
+		EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF ACCURACY, NON-INFRINGEMENT, MERCHANTABILITY, FITNESS FOR A 
+		PARTICULAR PURPOSE TO THE FullEST EXTENT PERMITTED BY LAW. WE DISCLAIM ANY WARRANTIES FOR THE SECURITY, ACCURACY, PERFORMANCE, 
+		QUALITY AND INFORMATION OF THIS PRODUCT, SERVICE OR WEBSITE. WE DO NOT WARRANTY THAT THE SERVICE WILL BE ERROR FREE OR THAT 
+		THE SERVICE WILL BE UNINTERRUPTED. 
+		WE AND OUR REPRESENTATIVES, AGENTS, OFFICERS, DIRECTORS AND EMPLOYEES ARE NOT RESPONSIBLE FOR ANY ACTIONS, CONTENT OR DATA FROM THIRD PARTIES 
+		AND YOU RELEASE US FROM ANY CLAIMS AND DAMAGES CONNECTED WITH SUCH THIRD PARTIES. YOU ARE COMPLETELY RESPONSIBLE FOR YOUR USE OF THIS PRODUCT.
+		<p>LIMITATIONS OF LIABILITY
+		<p>WE DISCLAIM ANY LIABILITY WITH REGARD TO ANY USE OF THIS PRODUCT. THE SERVICE PROVIDED IS FOR USE AT YOUR OWN RISK. 
+		IN NO EVENT SHALL WE, OR OUR OFFICERS, EMPLOYEES, PARTNERS, DIRECTORS OR SUPPLIERS BE LIABLE TO YOU OR ANY THIRD PARTY 
+		FOR ANY SPECIAL, INCIDENTAL, DIRECT, INDIRECT, CONSEQUENTIAL OR PUNITIVE DAMAGES WHATSOEVER, INCLUDING THOSE RESULTING 
+		FROM LOSS OF USE, LOSS OF DATA, OR LOSS OF PROFITS WHETHER OR NOT WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES 
+		OR BASED ON ANY BREACH OF CONTRACT OR WARRANTY, NEGLIGENCE OR ANY OTHER CLAIM OCCURRING FROM THE USE OF THIS PRODUCT OR WEBSITE. 
+		THIS DISCLAIMER OF LIABILITY ALSO APPLIES TO ANY SERVICES PROVIDED BY SEA BREEZE COMPUTERS AND ADVERTISEMENTS OR THIRD PARTY 
+		SERVICES OR PRODUCTS PROVIDED THROUGH THIS SERVICE OR WEBSITE. YOU ARE COMPLETELY RESPONSIBLE FOR ANY DAMAGE CAUSED TO YOUR COMPUTER, 
+		ANY VIRUSES RECEIVED AND ANY LOSS OF DATA AS A RESULT FROM THE USE OF THIS SERVICE OR WEBSITE OR THIRD PARTY LINKS.
+	</div>
+	</details>
+	<div class="free_trial_msg" data-lang="free_trial_msg">
+	<a href="https://www.seabreezecomputers.com/speech/subscription/"
+	data-lang-href="buy_link">Upgrade to <span class="title"></span> Full</a></b><br>
+	(Note: If you recently purchased "<span class="title"></span> Full" then you may need to restart the browser and possibly your computer.
+	- <a data-lang-href="support_free_trial_link" href="https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial">
+	See Help</a>)
+	</div>
+	
+    <script src="storage.js" type="text/javascript"></script>
+    <script src="commands.js" type="text/javascript"></script>
+	<script src="languages.js" type="text/javascript"></script> <!-- Version 1.5.8 - Moved above sr.js -->
+	<script src="sr.js" type="text/javascript"></script>
+	<script src="tts.js" type="text/javascript"></script>
+	<script src="autoPunctuation.js" type="text/javascript"></script>
+	<script src="social.js" id='social_script' type="text/javascript"></script>
+	<script src="license2020.js" type="text/javascript"></script> <!-- Version 1.4.0 -->
+	<script src="license.js" type="text/javascript"></script> <!-- Version 1.4.2g - This should not be in Lite Versions -->
+	
+	<div class='footer'>
+	<span>Copyright 2016 <a href="https://www.seabreezecomputers.com" target="_blank"
+	data-lang-href="sbc_link">Sea Breeze Computers</a></span>
+	<span><a href="https://chrome.google.com/webstore/detail/speech-recognition-anywhe/kdnnmhpmcakdilnofmllgcigkibjonof" target="_blank" class="cws_link">Speech Recognition Anywhere</a></span> <!-- Version 1.4.9 - Added class="cws_link" // Version 1.7.2 - Removed data-lang-href="cws_link" -->
+	<span><a href="https://www.seabreezecomputers.com/speech/support/" target="_blank" 
+	data-lang-href="support_link" data-lang="support">Support</a></span> <!-- Version 1.4.9 -->
+	</div>
+    
+</body>
+</html>
+	

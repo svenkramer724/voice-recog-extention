@@ -1,0 +1,38 @@
+{
+   "FREE_TRIAL": {
+      "description": "Free version",
+      "message": "Gratis försök"
+   },
+   "FREE_TRIAL_EXPIRED": {
+      "description": "Free version expired",
+      "message": "Gratis försök utgått"
+   },
+   "FULL": {
+      "description": "Full version",
+      "message": "FULL"
+   },
+   "Free": {
+      "description": "Free verison",
+      "message": "Gratis"
+   },
+   "appDesc": {
+      "description": "The 132 char description of the application, displayed in the web store.",
+      "message": "Använd taligenkänning för att skriva e-post och dokument. Styr Internet med tal till text."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Taligenkänning var som helst"
+   },
+   "chrome_pages_error": {
+      "message": "OBS! Google tillåter inte att Chrome-tillägg fungerar på särskilda \u003Cb> chrome:// \u003C/b> -sidor eller i Chrome Webstore, till exempel sidan på den senaste fliken."
+   },
+   "chrome_runtime_error": {
+      "message": ". OBS! Du måste ladda om den webbsida du försökte använda taligenkänning på innan den här tillägget kommer att fungera."
+   },
+   "network_error": {
+      "message": "Att göra en \u003Ca href='https://support.google.com/chrome/answer/3296214'>återställning\u003C/a> av Chrome kan hjälpa till att åtgärda det här felet."
+   },
+   "speech_recognition_error": {
+      "message": "Talidentifieringsfel upptäckt:"
+   }
+}

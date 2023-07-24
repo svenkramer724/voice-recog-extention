@@ -1,0 +1,48 @@
+{
+	"manifest_version": 2,
+	"name": "Speech Recognition Anywhere", 
+	"short_name" : "Speech Anywh", 
+	"author": "Jeff Baker",
+	"version": "0.9",
+	"description": "Use Speech Recognition to fill out any input or form or document on the web!", 
+	"icons": {
+		"16": "images/microphone16.png", /* Optional: Used as favicon for extensions page */
+		"48": "images/microphone48.png", /* Used on chrome://extensions page */
+		"128": "images/microphone128.png" /* Used by Chrome Web Store */
+	},
+	"permissions": [ 
+		"http://www.seabreezecomputers.com/", // Permission to use ajax here
+		"https://www.seabreezecomputers.com/", // Permission to use ajax here
+		"http://192.168.1.5/", // testing ajax here
+		"identity",
+		"tabs", // So popup.js can get the url of the current tab
+		"clipboardWrite", // to use document.execCommand('copy') or document.execCommand('cut')
+		"clipboardRead", // to use document.execCommand('paste')
+		"storage", // To use chrome.storage.sync or chrome.storage.local
+		"unlimitedStorage", // Removes 5MB limit to chrome.storage.local
+		"activeTab", // Needed to inject script in active tab
+		"<all_urls>", // Needed to inject script in active tab
+		"idle",
+		"power"
+		], 
+	"web_accessible_resources": [
+		"images/slider.png" /* Then you can use <img id="imgSlider" src="chrome.extension.getURL('images/slider.png')"> */
+	],
+	"browser_action": {
+		"default_icon": "images/microphone38.png", /* Icon in toolbar (19px or 38px) */
+		"default_title": "Speech Recognition Anywhere"      /* optional; shown as a tooltip when mouse hovers over icon */
+		/* "default_popup": "popup.html" */
+	},
+	"background": {
+  		"scripts": ["storage.js", "background.js", "license.js"] /* Script that is always running in background */
+	},
+	"content_scripts": [
+    {
+		"matches": ["<all_urls>"], /* script will be loaded on all urls */
+		"js": ["storage.js", "content.js"], /* comma separated list of js files */
+		"css": [],
+		"all_frames": true, /* to be able to access cross-origin iframes */
+		"run_at": "document_end" 
+	} ]
+
+}

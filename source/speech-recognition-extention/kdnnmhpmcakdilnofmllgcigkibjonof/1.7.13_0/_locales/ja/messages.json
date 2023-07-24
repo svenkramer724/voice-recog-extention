@@ -1,0 +1,311 @@
+{
+   "FREE_TRIAL": {
+      "description": "Free version",
+      "message": "無料トライアル"
+   },
+   "FREE_TRIAL_EXPIRED": {
+      "description": "Free version expired",
+      "message": "無料試用期限切れ"
+   },
+   "FULL": {
+      "description": "Full version",
+      "message": "完了"
+   },
+   "Free": {
+      "description": "Free verison",
+      "message": "無料"
+   },
+   "action": {
+      "message": "アクション"
+   },
+   "add_btn": {
+      "message": "+追加"
+   },
+   "always_lowercase": {
+      "message": "常にすべてのテキストを小文字にする"
+   },
+   "appDesc": {
+      "description": "The 132 char description of the application, displayed in the web store.",
+      "message": "音声認識を使用して、電子メールやドキュメントを作成します。 あなたの声でインターネットを制御します。"
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "どこでも音声認識"
+   },
+   "auto_punctuation": {
+      "message": "自動句読点"
+   },
+   "auto_punctuation_video": {
+      "message": "説明ビデオを参照"
+   },
+   "auto_punctuation_video_link": {
+      "message": "https://youtu.be/-4X4FsBfsbE"
+   },
+   "buy": {
+      "message": "アップグレードを購入する"
+   },
+   "buy_link": {
+      "message": "https://www.seabreezecomputers.com/speech/subscription/ja/"
+   },
+   "change_in_Settings": {
+      "message": "設定の変更。"
+   },
+   "check_order": {
+      "message": "チェック"
+   },
+   "chrome_pages_error": {
+      "message": "注：拡張機能は、特別なchrome://またはedge://ページ、または最後のタブのページなどのChromeウェブストアまたはEdgeアドオンページでは許可されていません。"
+   },
+   "chrome_runtime_error": {
+      "message": "。注：この拡張機能が動作するには、音声認識を使用しようとしていたWebページをリロードする必要があります。"
+   },
+   "chrome_windows": {
+      "message": "他のChromeWindowsで音声認識を許可する"
+   },
+   "click_to_close": {
+      "message": "拡張機能アイコンをもう一度クリックして、拡張機能を閉じます"
+   },
+   "commands_btn": {
+      "message": "コマンド"
+   },
+   "confirm": {
+      "message": "本気ですか？ "
+   },
+   "custom_commands_div": {
+      "message": "カスタムコマンド"
+   },
+   "custom_commands_free_trial_msg": {
+      "message": "\n\t\t\t\u003Cb>カスタム音声コマンドの追加は、「フルバージョン」でのみ使用できます。\u003Cspan class=\"title\">\u003C/span>\"。に\u003Cbr>\n\t\t\t\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">アップグレード\u003Cspan class=\"title\">\u003C/span>フル\u003C/a>\u003C/b>\u003Cbr>\n\t\t\t（注：最近購入した場合 \"\u003Cspan class=\"title\">\u003C/span>フル」の場合\u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">\n\t\t\tはヘルプ\u003C/a>を \n\t\t\t\u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">参照してください\u003C/a>）\n\t\t"
+   },
+   "custom_commands_link": {
+      "message": "https://www.seabreezecomputers.com/speech/#custom"
+   },
+   "custom_commands_msg": {
+      "message": "*カスタムコマンドのヘルプについては、\u003Ca href=\"https://www.seabreezecomputers.com/speech/#custom\" data-lang-href=\"custom_commands_link\" target=\"_blank\">http：//www.seabreezecomputers.com/speech/#customにアクセス\u003C/a>して \n\t\t\u003Ca href=\"https://www.seabreezecomputers.com/speech/#custom\" data-lang-href=\"custom_commands_link\" target=\"_blank\">ください。\u003C/a>\n\t\t"
+   },
+   "days_left": {
+      "message": "残りの日数"
+   },
+   "default_language": {
+      "message": "検出された既定の言語："
+   },
+   "delete": {
+      "message": "消去"
+   },
+   "description": {
+      "message": "説明"
+   },
+   "disable_auto_gain_control": {
+      "message": "自動ゲイン制御を無効にします（マイクの音量が変化し続ける場合は、これをチェックしてください）"
+   },
+   "disable_autofocus": {
+      "message": "音声が聞こえたときに最も近いテキストボックスでオートフォーカスを無効にする"
+   },
+   "disable_commands": {
+      "message": "音声コマンドを無効にする（音声認識のみが機能します）"
+   },
+   "disable_commands_msg": {
+      "message": " 音声コマンドは [設定] で無効になっています。 "
+   },
+   "disable_edge_auto_punctuation": {
+      "description": "Version 1.6.3",
+      "message": "Microsoft Edge Chromiumの自動句読点を無効にする"
+   },
+   "disable_interim": {
+      "message": "黄色の吹き出しを無効にします（最後の吹き出しのみが表示されます）"
+   },
+   "disable_speech2text": {
+      "message": "音声認識を無効にする（音声コマンドのみが機能します）"
+   },
+   "disable_speech2text_msg": {
+      "message": " テキスト読み上げ (ディクテーション) は [設定] で無効になっています。 "
+   },
+   "enable": {
+      "message": "有効にする"
+   },
+   "enable_continuous_recognition": {
+      "description": "Version 1.6.3",
+      "message": "連続音声認識モードを無効にします（一部のユーザーには適していますが、他のユーザーには適していません）"
+   },
+   "end_beep": {
+      "message": "音声が検出された後、ビープ音を鳴らします"
+   },
+   "export_btn": {
+      "message": "輸出"
+   },
+   "free_trial_msg": {
+      "message": "\n\t\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">へのアップグレード \u003Cspan class=\"title\">\u003C/span>フル\u003C/a>\u003Cbr>\n\t（注：最近購入した場合 \"\u003Cspan class=\"title\">\u003C/span>フル」の場合は、Chromeと、場合によってはコンピュータを再起動する必要があります。-\u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">\n\tヘルプを参照\u003C/a>）\n\t"
+   },
+   "free_trial_msg_settings": {
+      "message": "\n\t\t\t\u003Cb>以下の設定は、フルバージョンの「\u003Cspan class=\"title\">\u003C/span>\"。\u003Cbr>\n\t\t\t\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">購入アップグレード\u003Cspan class=\"title\">\u003C/span>フル\u003C/a>\u003C/b>\u003Cbr> \u003C!-- Version 1.5.4 - Added Purchase -->\n\t\t\t（注：最近購入した場合 \"\u003Cspan class=\"title\">\u003C/span>フル」の場合\u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">\n\t\t\tはヘルプ\u003C/a>を \n\t\t\t\u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">参照してください\u003C/a>）\n\t\t"
+   },
+   "import_btn": {
+      "message": "輸入"
+   },
+   "import_start": {
+      "message": "インポートを開始"
+   },
+   "import_type_append": {
+      "message": "カスタムコマンドに追加"
+   },
+   "import_type_overwrite": {
+      "message": "カスタムコマンドを上書きする"
+   },
+   "initializing": {
+      "message": "初期化中..."
+   },
+   "instruction_video": {
+      "message": "インストラクションビデオ"
+   },
+   "instructions_btn": {
+      "message": "手順"
+   },
+   "instructions_div": {
+      "message": "\n\t\t\t\u003Cli>音声認識を任意のページで機能させるには、このタブをバックグラウンドで開いたままにします。\u003C/li>\n\t\t\t\u003Cli>他のタブに切り替えて、話し始めます。\u003C/li>\n\t\t\t\u003Cli>音声認識を停止するには、このタブを閉じます。\u003C/li>\n\t\t"
+   },
+   "language": {
+      "message": "言語："
+   },
+   "license": {
+      "message": "ライセンス"
+   },
+   "network_error": {
+      "message": "Chromeを\u003Ca href='https://support.google.com/chrome/answer/3296214'>リセット\u003C/a>すると、このエラーを解決できます。"
+   },
+   "no": {
+      "message": "番号"
+   },
+   "order_id": {
+      "message": "注文番号： "
+   },
+   "order_status": {
+      "message": "状態： "
+   },
+   "pause_for_audio": {
+      "message": "一時停止 \"\u003Cspan class=\"title\">\u003C/span>「オーディオがタブで再生されている場合"
+   },
+   "pause_for_audio_msg": {
+      "message": " すべてのタブでオーディオの再生が停止するまで、音声認識は一時停止されます。(設定を参照してください)。 "
+   },
+   "phrase": {
+      "message": "フレーズ"
+   },
+   "prevent_display_sleep": {
+      "message": "「画面がスリープしないようにする」\u003Cspan class=\"title\">\u003C/span>「聞いている"
+   },
+   "prevent_system_sleep": {
+      "message": "「システムがスリープ状態にならないようにする」\u003Cspan class=\"title\">\u003C/span>「聞いている"
+   },
+   "prevent_system_sleep_msg": {
+      "message": "注：現時点では、Chrome拡張機能はスクリーンセーバーを中断できませんが、電源管理で画面がオフになったときに画面をオンに戻すことができます。したがって、音声で画面をオンに戻したい場合は、スクリーンセーバーを無効にする必要があります。"
+   },
+   "remove_auto_capitalize": {
+      "message": "Googleの自動キャピタライゼーションを削除する"
+   },
+   "sbc_link": {
+      "message": "https://www.seabreezecomputers.com/"
+   },
+   "select_voice": {
+      "message": "ボイス： "
+   },
+   "settings_btn": {
+      "message": "設定"
+   },
+   "shortcuts_key_msg": {
+      "message": "ショートカットキー設定で使用できます"
+   },
+   "signin": {
+      "message": "ブラウザにサインインするか、注文番号を入力します。"
+   },
+   "speech_recognition_error": {
+      "message": "音声認識エラーが検出されました："
+   },
+   "sr_language": {
+      "message": "現在の音声認識言語："
+   },
+   "start_in_background": {
+      "message": "始める \"\u003Cspan class=\"title\">\u003C/span>\"バックグラウンドで"
+   },
+   "start_with_chrome": {
+      "message": "始める \"\u003Cspan class=\"title\">\u003C/span>\"Chromeが起動したとき"
+   },
+   "submit_search_fields": {
+      "message": "検索フィールドを自動的に送信する"
+   },
+   "support": {
+      "message": "サポート"
+   },
+   "support_free_trial_link": {
+      "message": "https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial"
+   },
+   "support_link": {
+      "message": "https://www.seabreezecomputers.com/speech/support/"
+   },
+   "terms_btn": {
+      "message": "利用規約"
+   },
+   "terms_div": {
+      "message": "\n\t\t\u003Cp>このソフトウェア製品を使用することにより、\u003Ca href=\"https://www.seabreezecomputers.com/speech/terms/\" data-lang-href=\"terms_link\" target=\"_blank\">http：//www.seabreezecomputers.com/speech/terms/\u003C/a>\n\t\tで入手可能な使用条件および以下の条件に拘束されることに同意するもの \n\t\tとします。 \n\t\t\u003C/p>\u003Cp>この拡張機能は、音声認識にGoogleのWeb Speech APIを使用しているため、音声認識がうまく機能しない場合は、Googleに相談する必要があります。Sea Breeze Computersは、この製品のパフォーマンスまたは音声認識サービスの継続的な運用について、いかなる保証も行いません。\u003C/p>\n\t\t\u003Cp>保証の否認\n\t\t\u003C/p>\u003Cp>当社は、製品が将来同じように動作することを保証しません。払い戻しやクレジットの対象にはなりません。この製品は、「現状有姿」および「提供可能な範囲」で提供され、いかなる種類の保証もありません。当社は、法律で認められる最大限の範囲で、正確性、非侵害、商品性、特定目的への適合性の保証を含むがこれに限定されない、明示または黙示を問わず、すべての保証を否認します。当社は、この製品、サービス、またはWebサイトのセキュリティ、正確性、パフォーマンス、品質、および情報に関するいかなる保証も否認します。当社は、サービスにエラーがないこと、またはサービスが中断されないことを保証しません。私たちおよび私たちの代表者、代理人、役員、取締役および従業員は、いかなる行動に対しても責任を負いません。サードパーティからのコンテンツまたはデータ、およびお客様は、そのようなサードパーティに関連する請求および損害から当社を解放します。あなたはこの製品の使用に対して完全に責任があります。\n\t\t\u003C/p>\u003Cp>責任の制限\n\t\t\u003C/p>\u003Cp>この製品の使用に関して、当社は一切の責任を負いません。提供されるサービスは、ご自身の責任で使用するためのものです。いかなる場合も、当社または当社の役員、従業員、パートナー、取締役、またはサプライヤーは、これらの損害を含む、いかなる特別、偶発的、直接的、間接的、結果的、または懲罰的損害賠償についても、お客様または第三者に対して責任を負わないものとします。データの損失、またはそのような損害の可能性について知らされていたかどうかにかかわらず、またはこの製品またはWebサイトの使用に起因する契約または保証の違反、過失、またはその他の請求に基づく利益の損失。この責任の否認は、SEA BREEZEコンピューターおよび広告によって提供されるすべてのサービス、またはこのサービスまたはWebサイトを通じて提供されるサードパーティのサービスまたは製品にも適用されます。\n\t\u003C/p>"
+   },
+   "terms_link": {
+      "message": "https://www.seabreezecomputers.com/speech/terms/"
+   },
+   "title": {
+      "message": "どこでも音声認識"
+   },
+   "tts_highlight": {
+      "message": "読んでいるテキストを強調表示する"
+   },
+   "tts_pitch": {
+      "message": "ピッチ： "
+   },
+   "tts_rate": {
+      "message": "割合： "
+   },
+   "tts_scroll": {
+      "message": "読んでいるテキストまでスクロールします"
+   },
+   "tts_settings": {
+      "message": "テキスト読み上げの設定"
+   },
+   "tts_simple": {
+      "message": "シンプルモード（ARIAの役割と「ボタン」や「ハイパーリンク」などのタグ名の冗長な読み取りをオフにします）"
+   },
+   "tts_test_btn": {
+      "message": "テスト"
+   },
+   "tts_test_speech": {
+      "message": "これはテストです。"
+   },
+   "use_keypresses": {
+      "description": "Version 1.7.7",
+      "message": "キーを押してテキストを送信します (貼り付けをブロックする一部の Web サイトで動作します)"
+   },
+   "use_wakeup_phrase": {
+      "message": "音声アクティベーションウェイクアップフレーズを使用します。 "
+   },
+   "use_wakeup_timeout": {
+      "message": "20秒以上スピーチがない場合にのみ、再度ウェイクアップフレーズを要求する"
+   },
+   "virtual_assistant_mode": {
+      "message": "バーチャルアシスタントモード"
+   },
+   "virtual_assistant_mode_msg": {
+      "message": "（仮想アシスタントモードでは、このタブがアクティブであるか、Googleのタブがアクティブである場合、コマンドリストにない音声が「OKGoogle」仮想アシスタントに送信されます。）"
+   },
+   "wakeup_beep": {
+      "message": "ウェイクアップフレーズが検出されたらビープ音を鳴らします"
+   },
+   "wakeup_low_beep": {
+      "message": "ウェイクアップフレーズをもう一度探すときは、低いビープ音を鳴らします"
+   },
+   "wakeup_phrase": {
+      "message": "（例：「OKGoogle」または「コンピューター」）"
+   },
+   "wakeup_phrase_msg": {
+      "message": " ウェイクアップ フレーズのリスニング: "
+   },
+   "yes": {
+      "message": "はい"
+   }
+}

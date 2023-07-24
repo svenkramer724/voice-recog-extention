@@ -1,0 +1,38 @@
+{
+   "FREE_TRIAL": {
+      "description": "Free version",
+      "message": "免费试用"
+   },
+   "FREE_TRIAL_EXPIRED": {
+      "description": "Free version expired",
+      "message": "免费试用期满"
+   },
+   "FULL": {
+      "description": "Full version",
+      "message": "满"
+   },
+   "Free": {
+      "description": "Free verison",
+      "message": "自由"
+   },
+   "appDesc": {
+      "description": "Google Translate Simplified is used here",
+      "message": "使用语音识别填写任何表格，并用语音和文字口述电子邮件。使用自定义语音命令控制互联网！"
+   },
+   "appName": {
+      "description": "The Simplified is the standard in mainland of China and the Traditional form is mainly used in Taiwan and Hong Kong.",
+      "message": "语音识别无处不在"
+   },
+   "chrome_pages_error": {
+      "message": "注意：特殊 chrome:// 或 edge:// 页面或 Chrome Webstore 或 Edge Add-Ons 页面（例如最后一个选项卡上的页面）上不允许扩展。"
+   },
+   "chrome_runtime_error": {
+      "message": "。注意：您必须重新加载您尝试使用语音识别的网页才能使用此扩展程序。"
+   },
+   "network_error": {
+      "message": "重新安装Chrome或执行Chrome \u003Ca href='https://support.google.com/chrome/answer/3296214'>重置\u003C/a>可能有助于解决此错误。"
+   },
+   "speech_recognition_error": {
+      "message": "检测到语音识别错误： "
+   }
+}

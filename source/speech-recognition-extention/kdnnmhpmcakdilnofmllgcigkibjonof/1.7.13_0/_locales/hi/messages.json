@@ -1,0 +1,291 @@
+{
+   "FREE_TRIAL": {
+      "message": "मुफ्त परीक्षण"
+   },
+   "FREE_TRIAL_EXPIRED": {
+      "message": "निःशुल्क परीक्षण समाप्त हो गया"
+   },
+   "FULL": {
+      "message": "भरा हुआ"
+   },
+   "Free": {
+      "message": "मुक्त"
+   },
+   "action": {
+      "message": "क्रिया"
+   },
+   "add_btn": {
+      "message": "+ जोड़ें"
+   },
+   "always_lowercase": {
+      "message": "सभी टेक्स्ट को हमेशा लोअरकेस करें"
+   },
+   "appDesc": {
+      "message": "फ़ॉर्म भरने के लिए ध्वनि पहचान का उपयोग करें और बोली से पाठ में ईमेल निर्देशित करें। कस्टम वॉयस कमांड से इंटरनेट को नियंत्रित करें!"
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "भाषण मान्यता कहीं भी"
+   },
+   "auto_punctuation": {
+      "message": "ऑटो विराम चिह्न"
+   },
+   "auto_punctuation_video": {
+      "message": " निर्देश वीडियो देखें"
+   },
+   "auto_punctuation_video_link": {
+      "message": "https://youtu.be/-4X4FsBfsbE"
+   },
+   "buy": {
+      "message": "अपग्रेड खरीदें"
+   },
+   "buy_link": {
+      "message": "https://www.seabreezecomputers.com/speech/subscription/"
+   },
+   "change_in_Settings": {
+      "message": "सेटिंग्स में बदलाव।"
+   },
+   "check_order": {
+      "message": "जांच"
+   },
+   "chrome_pages_error": {
+      "message": "ध्यान दें: विशेष chrome:// या edge:// पेज या Chrome वेबस्टोर या एज ऐड-ऑन पेज जैसे कि अंतिम टैब पर मौजूद पेज पर एक्सटेंशन की अनुमति नहीं है।"
+   },
+   "chrome_runtime_error": {
+      "message": ". ध्यान दें: इस एक्सटेंशन के काम करने से पहले आपको उस वेब पेज को फिर से लोड करना होगा जिस पर आप वाक् पहचान का उपयोग करने का प्रयास कर रहे थे।"
+   },
+   "chrome_windows": {
+      "message": "अन्य क्रोम विंडोज़ में वाक् पहचान की अनुमति दें"
+   },
+   "click_to_close": {
+      "message": "एक्सटेंशन को बंद करने के लिए एक्सटेंशन आइकन पर दूसरी बार क्लिक करें"
+   },
+   "commands_btn": {
+      "message": "आदेश"
+   },
+   "confirm": {
+      "message": "क्या आपको यकीन है? "
+   },
+   "custom_commands_div": {
+      "message": "कस्टम आदेश"
+   },
+   "custom_commands_free_trial_msg": {
+      "message": "\n\t\t\t\u003Cb>\u003Cspan class=\"title\">भाषण मान्यता कहीं भी\u003C/span> \" के पूर्ण संस्करण में उपलब्ध है । \u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">\u003Cspan class=\"title\">Speech Recognition Anywhere\u003C/span>\u003C/a>\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\"> पूर्ण \u003C/a>\u003Cbr>\n\t\t\t\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">में अपग्रेड करें\u003Cspan class=\"title\">भाषण मान्यता कहीं भी\u003C/span>\u003C/a>\u003C/b>\u003Cbr> \n\t\t\t(ध्यान दें: यदि आपने हाल ही में \" \u003Cspan class=\"title\">भाषण मान्यता कहीं भी\u003C/span> पूर्ण\" खरीदी है तो \n\t\t\t \u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">\n\t\t\tसहायता देखें\u003C/a> )\n\t\t"
+   },
+   "custom_commands_link": {
+      "message": "http://www.seabreezecomputers.com/speech/#custom"
+   },
+   "custom_commands_msg": {
+      "message": "\u003Ca href=\"http://www.seabreezecomputers.com/speech/#custom\" data-lang-href=\"custom_commands_link\" target=\"_blank\">* कस्टम कमांड की मदद के लिए http://www.seabrezecomputers.com/speech/#custom\u003C/a> पर जाएं \n\t\t\u003Ca href=\"http://www.seabreezecomputers.com/speech/#custom\" data-lang-href=\"custom_commands_link\" target=\"_blank\">\u003C/a>\n\t\t"
+   },
+   "days_left": {
+      "message": "दिन शेष"
+   },
+   "default_language": {
+      "message": "डिफ़ॉल्ट भाषा के रूप में पता चला: "
+   },
+   "delete": {
+      "message": "मिटाना"
+   },
+   "description": {
+      "message": "विवरण"
+   },
+   "disable_auto_gain_control": {
+      "message": "ऑटो गेन कंट्रोल अक्षम करें (यह जांचें कि क्या आपका माइक्रोफ़ोन वॉल्यूम बदलता रहता है)"
+   },
+   "disable_autofocus": {
+      "message": "भाषण सुनाई देने पर निकटतम टेक्स्ट बॉक्स पर ऑटो फोकस अक्षम करें"
+   },
+   "disable_commands": {
+      "message": "वॉयस कमांड अक्षम करें (केवल भाषण से पाठ काम करेगा)"
+   },
+   "disable_continuous_recognition": {
+      "message": "निरंतर वाक् पहचान मोड अक्षम करें (कुछ उपयोगकर्ताओं के लिए बेहतर काम करता है लेकिन दूसरों के लिए नहीं)"
+   },
+   "disable_edge_auto_punctuation": {
+      "message": "माइक्रोसॉफ्ट एज क्रोमियम ऑटो विराम चिह्न को अक्षम करें"
+   },
+   "disable_interim": {
+      "message": "पीला भाषण बुलबुला अक्षम करें (केवल अंतिम भाषण प्रदर्शित होगा)"
+   },
+   "disable_speech2text": {
+      "message": "भाषण को पाठ में अक्षम करें (केवल वॉयस कमांड काम करेंगे)"
+   },
+   "enable": {
+      "message": "सक्षम करें"
+   },
+   "end_beep": {
+      "message": "बोली का पता लगने के बाद बीप बजाएं"
+   },
+   "export_btn": {
+      "message": "निर्यात करना"
+   },
+   "free_trial_msg": {
+      "message": "\n\t\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">\u003Cspan class=\"title\">भाषण मान्यता कहीं भी\u003C/span> पूर्ण में अपग्रेड करें (ध्यान दें: यदि आपने हाल ही में \" \u003C/a>\u003Cspan class=\"title\">Speech Recognition Anywhere\u003C/span>\u003Cbr> पूर्ण\" \n\tखरीदी है तो आपको ब्राउज़र और संभवतः अपने कंप्यूटर को पुनरारंभ करने की आवश्यकता हो सकती है। - \u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">\n\tसहायता देखें\u003C/a> )\n\t\u003Cspan class=\"title\">भाषण मान्यता कहीं भी\u003C/span>\u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">\u003C/a>"
+   },
+   "free_trial_msg_settings": {
+      "message": "\n\t\t\t\u003Cb>निम्नलिखित सेटिंग्स केवल \"\u003Cspan class=\"title\">भाषण मान्यता कहीं भी \u003C/span> \" के पूर्ण संस्करण में उपलब्ध हैं। \u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\"> फुल \u003C/a>\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">खरीदें\u003C/a>\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">\u003Cspan class=\"title\">भाषण मान्यता कहीं भी\u003C/span>\u003C/a>\u003Cbr>\n\t\t\t\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">\u003Cspan class=\"title\">\u003C/span>\u003C/a>\u003C/b> \n\t\t\t(नोट: यदि आपने हाल ही में \" फुल\" खरीदा है तो \n\t\t\t \u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">\n\t\t\tसहायता देखें\u003C/a> )\n\t\t\u003Cspan class=\"title\"> भाषण मान्यता कहीं भी\u003C/span>\u003Cbr> \u003C!-- Version 1.5.4 - Added Purchase -->\u003Cspan class=\"title\">\u003C/span>\u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">\u003C/a>"
+   },
+   "import_btn": {
+      "message": "आयात"
+   },
+   "import_start": {
+      "message": "आयात प्रारंभ करें"
+   },
+   "import_type_append": {
+      "message": "कस्टम कमांड में जोड़ें"
+   },
+   "import_type_overwrite": {
+      "message": "कस्टम कमांड"
+   },
+   "initializing": {
+      "message": "प्रारंभ कर रहा है..."
+   },
+   "instruction_video": {
+      "message": "निर्देश वीडियो"
+   },
+   "instruction_video_link": {
+      "message": "https://youtu.be/E11-p7quCjA"
+   },
+   "instructions_btn": {
+      "message": "निर्देश"
+   },
+   "instructions_div": {
+      "message": "\n\t\t\t\u003Cli>वाक् पहचान के लिए किसी पृष्ठ पर कार्य करने के लिए इस टैब को पृष्ठभूमि में खुला रखें.\u003C/li>\n\t\t\t\u003Cli>किसी अन्य टैब पर स्विच करें और बात करना प्रारंभ करें।\u003C/li>\n\t\t\t\u003Cli>वाक् पहचान को बंद करने के लिए इस टैब को बंद करें।\u003C/li>\n\t\t"
+   },
+   "language": {
+      "message": "भाषा:"
+   },
+   "license": {
+      "message": "लाइसेंस"
+   },
+   "network_error": {
+      "message": "Chrome को पुनर्स्थापित करने या Chrome \u003Ca href=\"https://support.google.com/chrome/answer/3296214\">रीसेट\u003C/a> करने से इस त्रुटि को ठीक करने में सहायता मिल सकती है।"
+   },
+   "no": {
+      "message": "नहीं"
+   },
+   "order_id": {
+      "message": "क्रम संख्या:"
+   },
+   "order_status": {
+      "message": "दर्जा:"
+   },
+   "pause_for_audio": {
+      "message": "\u003Cspan class=\"title\">भाषण मान्यता कहीं भी\u003C/span>यदि टैब में ऑडियो चल रहा है तो \" रोकें"
+   },
+   "phrase": {
+      "message": "मुहावरा"
+   },
+   "prevent_display_sleep": {
+      "message": "\u003Cspan class=\"title\">भाषण मान्यता कहीं भी\u003C/span> \" सुन रहा हो तो स्क्रीन को सोने से रोकें"
+   },
+   "prevent_system_sleep": {
+      "message": "जब \"\u003Cspan class=\"title\">भाषण मान्यता कहीं भी\u003C/span> \" सुन रहा हो तो सिस्टम को सोने से रोकें"
+   },
+   "prevent_system_sleep_msg": {
+      "message": "ध्यान दें: इस समय एक्सटेंशन स्क्रीन सेवर को बाधित नहीं कर सकते हैं लेकिन जब पावर प्रबंधन स्क्रीन को बंद कर देता है तो वे स्क्रीन को वापस चालू कर सकते हैं। इसलिए यदि आप चाहते हैं कि स्क्रीन आपकी आवाज से वापस चालू हो जाए तो आपको अपने स्क्रीन सेवर को अक्षम करना होगा।"
+   },
+   "remove_auto_capitalize": {
+      "message": "Google के ऑटो कैपिटलाइज़ेशन को हटा दें"
+   },
+   "sbc_link": {
+      "message": "http://www.seabreezecomputers.com/"
+   },
+   "select_voice": {
+      "message": "आवाज़:"
+   },
+   "settings_btn": {
+      "message": "समायोजन"
+   },
+   "shortcuts_key_msg": {
+      "message": "पर शॉर्टकट कुंजी सेटअप के साथ उपयोग किया जा सकता है"
+   },
+   "signin": {
+      "message": "ब्राउज़र में साइन इन करें या ऑर्डर नंबर दर्ज करें।"
+   },
+   "speech_recognition_error": {
+      "message": "वाक् पहचान त्रुटि का पता चला:"
+   },
+   "sr_language": {
+      "message": "वर्तमान भाषण पहचान भाषा: "
+   },
+   "start_in_background": {
+      "message": "पृष्ठभूमि में प्रारंभ करें"
+   },
+   "start_with_chrome": {
+      "message": "ब्राउज़र शुरू होने पर प्रारंभ करें"
+   },
+   "submit_search_fields": {
+      "message": "खोज फ़ील्ड स्वचालित रूप से सबमिट करें"
+   },
+   "support": {
+      "message": "सहायता"
+   },
+   "support_free_trial_link": {
+      "message": "https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial"
+   },
+   "support_link": {
+      "message": "https://www.seabreezecomputers.com/speech/support/"
+   },
+   "terms_btn": {
+      "message": "उपयोग की शर्तें"
+   },
+   "terms_div": {
+      "message": "\n\t\t\u003Cp>\u003Ca href=\"http://www.seabreezecomputers.com/speech/terms/\" data-lang-href=\"terms_link\" target=\"_blank\">इस सॉफ़्टवेयर उत्पाद का उपयोग करके आप http://www.seabreezecomputers.com/speech/terms/\u003C/a> पर उपलब्ध उपयोग की शर्तों \n\t\t \n\t\tऔर नीचे दी गई शर्तों से बाध्य होने के लिए सहमत हैं: \n\t\t\u003C/p>\u003Cp>यह एक्सटेंशन भाषण पहचान के लिए कुछ ब्राउज़रों (जैसे Google की वेब स्पीच एपीआई या माइक्रोसॉफ्ट एज की वेब स्पीच एपीआई) में निर्मित वेब स्पीच एपीआई का उपयोग करता है, इसलिए यदि वाक् पहचान अच्छी तरह से काम नहीं करती है, तो आपको इसके बारे में ब्राउज़र निर्माता से बात करनी होगी। सी ब्रीज कंप्यूटर्स इस उत्पाद के प्रदर्शन या वाक् पहचान सेवा के निरंतर संचालन के लिए कोई वारंटी नहीं देता है।\u003C/p>\n\t\t\u003Cp>वारंटियों का अस्वीकरण\n\t\t\u003C/p>\u003Cp>हम गारंटी नहीं देते हैं कि उत्पाद भविष्य में उसी तरह काम करेगा। आप रिफंड या क्रेडिट के हकदार नहीं होंगे। यह उत्पाद किसी भी प्रकार की वारंटी के बिना \"जैसा है\" और \"जैसा उपलब्ध है\" के आधार पर प्रदान किया जाता है। हम सभी वारंटियों, व्यक्त या निहित, को अस्वीकार करते हैं, जिसमें बिना किसी सीमा के, सटीकता की वारंटी, गैर-उल्लंघन, व्यापारिकता, कानून द्वारा अनुमत पूर्ण सीमा तक किसी विशेष उद्देश्य के लिए उपयुक्तता शामिल है। हम इस उत्पाद, सेवा या वेबसाइट की सुरक्षा, सटीकता, प्रदर्शन, गुणवत्ता और जानकारी के लिए किसी भी वारंटी को अस्वीकार करते हैं। हम वारंटी नहीं देते हैं कि सेवा त्रुटि मुक्त होगी या सेवा निर्बाध होगी। हम और हमारे प्रतिनिधि, एजेंट, अधिकारी, निदेशक और कर्मचारी किसी भी कार्रवाई के लिए ज़िम्मेदार नहीं हैं, तृतीय पक्षों से सामग्री या डेटा और आप हमें ऐसे तृतीय पक्षों से जुड़े किसी भी दावे और क्षति से मुक्त करते हैं। आप इस उत्पाद के अपने उपयोग के लिए पूरी तरह से जिम्मेदार हैं।\n\t\t\u003C/p>\u003Cp>उत्तरदायित्व की सीमाएं\n\t\t\u003C/p>\u003Cp>हम इस उत्पाद के किसी भी उपयोग के संबंध में किसी भी उत्तरदायित्व को अस्वीकार करते हैं। प्रदान की गई सेवा आपके अपने जोखिम पर उपयोग के लिए है। किसी भी स्थिति में हम, या हमारे अधिकारी, कर्मचारी, भागीदार, निदेशक या आपूर्तिकर्ता किसी भी विशेष, आकस्मिक, प्रत्यक्ष, अप्रत्यक्ष, परिणामी या दंडात्मक नुकसान के लिए आपके या किसी तीसरे पक्ष के प्रति उत्तरदायी नहीं होंगे, जिसमें उपयोग की हानि, हानि के परिणाम शामिल हैं डेटा की हानि, या लाभ की हानि चाहे हमें इस तरह के नुकसान की संभावना की सलाह दी गई हो या नहीं या अनुबंध या वारंटी के किसी भी उल्लंघन, लापरवाही या इस उत्पाद या वेबसाइट के उपयोग से होने वाले किसी अन्य दावे के आधार पर। उत्तरदायित्व का यह अस्वीकरण Sea Breeze कंप्यूटर और विज्ञापनों या तृतीय पक्ष सेवाओं या इस सेवा या वेबसाइट के माध्यम से प्रदान किए जाने वाले उत्पादों द्वारा प्रदान की जाने वाली किसी भी सेवा पर भी लागू होता है।\n\t\u003C/p>"
+   },
+   "terms_link": {
+      "message": "http://www.seabreezecomputers.com/speech/terms/"
+   },
+   "title": {
+      "message": "भाषण मान्यता कहीं भी "
+   },
+   "tts_highlight": {
+      "message": "पढ़े जा रहे पाठ को हाइलाइट करें"
+   },
+   "tts_pitch": {
+      "message": "पिच:"
+   },
+   "tts_rate": {
+      "message": "भाव:"
+   },
+   "tts_scroll": {
+      "message": "पढ़े जा रहे पाठ तक स्क्रॉल करें"
+   },
+   "tts_settings": {
+      "message": "टेक्स्ट-टू-स्पीच सेटिंग्स"
+   },
+   "tts_simple": {
+      "message": "सरल मोड (\"बटन\" और \"हाइपरलिंक\" जैसे ARIA भूमिकाओं और टैग नामों की वर्बोज़ रीडिंग को बंद कर देता है)"
+   },
+   "tts_test_btn": {
+      "message": "परीक्षण"
+   },
+   "tts_test_speech": {
+      "message": "यह टेस्ट है।"
+   },
+   "use_wakeup_phrase": {
+      "message": "वॉइस एक्टिवेशन वेक अप वाक्यांश का उपयोग करें:"
+   },
+   "use_wakeup_timeout": {
+      "message": "यदि 20 सेकंड से अधिक समय तक कोई भाषण नहीं होता है, तो केवल फिर से जगाने वाले वाक्यांश की आवश्यकता होती है"
+   },
+   "virtual_assistant_mode": {
+      "message": "आभासी सहायक मोड"
+   },
+   "virtual_assistant_mode_msg": {
+      "message": "(वर्चुअल असिस्टेंट मोड में यदि यह टैब सक्रिय है या Google के साथ एक टैब सक्रिय है तो बोली जाने वाली वाणी जो कमांड सूची में नहीं है, \"ओके गूगल\" वर्चुअल असिस्टेंट को भेजी जाएगी।)"
+   },
+   "wakeup_beep": {
+      "message": "जागने वाले वाक्यांश का पता चलने पर बीप टोन बजाएं"
+   },
+   "wakeup_low_beep": {
+      "message": "फिर से जगाने वाले वाक्यांश की तलाश करते समय कम बीप टोन बजाएं"
+   },
+   "wakeup_phrase": {
+      "message": "(उदाहरण: 'ओके गूगल' या 'कंप्यूटर')"
+   },
+   "yes": {
+      "message": "हाँ"
+   }
+}

@@ -1,0 +1,38 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js", "worker.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html",
+      "default_title": "Open Chrome Audio Capture interface"
+   },
+   "commands": {
+      "start": {
+         "description": "Start Capture",
+         "suggested_key": {
+            "default": "Ctrl+Shift+S",
+            "mac": "Command+Shift+U"
+         }
+      },
+      "stop": {
+         "description": "Stop Capture",
+         "suggested_key": {
+            "default": "Ctrl+Shift+X",
+            "mac": "MacCtrl+Shift+X"
+         }
+      }
+   },
+   "description": "This extension captures the audio on the current tab and saves the output file on your computer when the capture is complete",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjV01gXtalVtlNiXd3y/CVxjaNuLMqg8qkdYBDA9G5KcpBI5IXJptxssUuMycaMjm8IPhnX44dZbaXxOvBEPUBcHJwqCoa/tWafKLIFxGJyJn5oDJxLpDR67TsZxoALladlikXkmzgNr9ne3HrFiF75321Srf3Ruy9Rr3FYEKgN9mBEerBa5QemetjVmcGk2MNfj3RHBp1JKuDvdCLQ2WqYG7JjhpbSUMabQRVog+8MiM45OF7QF1NyMd7BL7whGji1rj8At5KUdALyBtrSytNEj8NXfyuwiJkWIZVk1QJO3o8aMKXiN1IxPx6Xt4fXzZVGAA+0QQEqe8zQAchWDVAwIDAQAB",
+   "manifest_version": 2,
+   "name": "Chrome Audio Capture",
+   "options_page": "options.html",
+   "permissions": [ "tabCapture", "downloads", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.2"
+}

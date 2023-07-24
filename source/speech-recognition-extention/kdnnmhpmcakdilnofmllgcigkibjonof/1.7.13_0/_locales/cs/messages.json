@@ -1,0 +1,38 @@
+{
+   "FREE_TRIAL": {
+      "description": "Free version",
+      "message": "Zkušební verze zdarma"
+   },
+   "FREE_TRIAL_EXPIRED": {
+      "description": "Free version expired",
+      "message": "Zkušební doba vypršela"
+   },
+   "FULL": {
+      "description": "Full version",
+      "message": "Dokončit"
+   },
+   "Free": {
+      "description": "Free verison",
+      "message": "Zdarma"
+   },
+   "appDesc": {
+      "description": "The 132 char description of the application, displayed in the web store.",
+      "message": "Použijte rozpoznávání hlasu pro vyplnění formuláře a diktování e-mailu s řečem do textu. Ovládejte internet pomocí vlastních hlasových příkazů!"
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Rozpoznávání řeči kdekoli"
+   },
+   "chrome_pages_error": {
+      "message": "POZNÁMKA: Společnost Google nepovoluje, aby rozšíření pro Chrome fungovala na speciálních stránkách \u003Cb> chrome:// \u003C/ b> nebo webovém obchodě Chrome, například na stránce na poslední kartě."
+   },
+   "chrome_runtime_error": {
+      "message": ". Poznámka: Musíte znovu načíst webovou stránku, na které jste se snažili rozpoznat rozpoznávání řeči, než toto rozšíření bude fungovat."
+   },
+   "network_error": {
+      "message": "Oprava této chyby může pomoci při přeinstalaci prohlížeče Chrome nebo při provádění \u003Ca href='https://support.google.com/chrome/answer/3296214'> Resetování \u003C/a> v Chrome."
+   },
+   "speech_recognition_error": {
+      "message": "Detekována chyba rozpoznávání řeči: "
+   }
+}

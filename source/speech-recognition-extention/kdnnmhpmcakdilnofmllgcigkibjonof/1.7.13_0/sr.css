@@ -1,0 +1,6 @@
+title::before {
+	content: "__MSG_appName__";
+}
+.test_title::before {
+	content: "__MSG_appName__";
+}

@@ -1,0 +1,311 @@
+{
+   "FREE_TRIAL": {
+      "description": "Free version",
+      "message": "ESSAI GRATUIT"
+   },
+   "FREE_TRIAL_EXPIRED": {
+      "description": "Free version expired",
+      "message": "ESSAI GRATUIT EXPIRÉ"
+   },
+   "FULL": {
+      "description": "Full version",
+      "message": "Complet"
+   },
+   "Free": {
+      "description": "Free verison",
+      "message": "Gratuit"
+   },
+   "action": {
+      "message": "Action"
+   },
+   "add_btn": {
+      "message": "+ Ajouter"
+   },
+   "always_lowercase": {
+      "message": "Toujours en minuscules tout le texte"
+   },
+   "appDesc": {
+      "description": "The 132 char description of the application, displayed in the web store.",
+      "message": "Utilisez la reconnaissance vocale pour remplir des formulaires, dicter des e-mails et contrôler Internet avec la parole en texte."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Reconnaissance de la parole"
+   },
+   "auto_punctuation": {
+      "message": "Ponctuation automatique"
+   },
+   "auto_punctuation_video": {
+      "message": " Voir la vidéo d'instructions"
+   },
+   "auto_punctuation_video_link": {
+      "message": "https://youtu.be/-4X4FsBfsbE"
+   },
+   "buy": {
+      "message": "Acheter la mise à niveau"
+   },
+   "buy_link": {
+      "message": "https://www.seabreezecomputers.com/speech/subscription/fr/"
+   },
+   "change_in_Settings": {
+      "message": "Changement dans les paramètres."
+   },
+   "check_order": {
+      "message": "Vérifier"
+   },
+   "chrome_pages_error": {
+      "message": "REMARQUE : Les extensions ne sont pas autorisées sur les pages spéciales chrome:// ou edge:// ou sur la page Chrome Webstore ou Edge Add-Ons, telle que la page du dernier onglet."
+   },
+   "chrome_runtime_error": {
+      "message": ". REMARQUE: vous devez recharger la page Web sur laquelle vous essayez d’utiliser la reconnaissance vocale avant que cette extension ne fonctionne."
+   },
+   "chrome_windows": {
+      "message": "Autoriser la reconnaissance vocale dans d'autres fenêtres Chrome"
+   },
+   "click_to_close": {
+      "message": "Cliquez une deuxième fois sur l'icône d'extension pour fermer l'extension"
+   },
+   "commands_btn": {
+      "message": "Commandes"
+   },
+   "confirm": {
+      "message": "Are you sure? "
+   },
+   "custom_commands_div": {
+      "message": "Commandes personnalisées"
+   },
+   "custom_commands_free_trial_msg": {
+      "message": "\n\t\t\t\u003Cb>L'ajout de commandes vocales personnalisées n'est disponible que dans la version complète de \" \u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span> \". \u003Cbr>\n\t\t\t\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">Mise à niveau vers \u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span> Full\u003C/a>\u003C/b>\u003Cbr> \n\t\t\t(Remarque&nbsp;: si vous avez récemment acheté «\u003Cspan class=\"title\">&nbsp;Reconnaissance de la parole\u003C/span> Full&nbsp;», \n\t\t\t \u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">\n\t\t\tconsultez l'aide\u003C/a> )\n\t\t"
+   },
+   "custom_commands_link": {
+      "message": "https://www.seabreezecomputers.com/speech/#custom"
+   },
+   "custom_commands_msg": {
+      "message": "* Pour obtenir de l'aide sur les commandes personnalisées, rendez-vous sur \n\t\t \u003Ca href=\"https://www.seabreezecomputers.com/speech/#custom\" data-lang-href=\"custom_commands_link\" target=\"_blank\">https://www.seabreezecomputers.com/speech/#custom\u003C/a>\n\t\t"
+   },
+   "days_left": {
+      "message": "Jours restants"
+   },
+   "default_language": {
+      "message": "Langue par défaut détectée comme&nbsp;: "
+   },
+   "delete": {
+      "message": "Supprimer"
+   },
+   "description": {
+      "message": "Description"
+   },
+   "disable_auto_gain_control": {
+      "message": "Désactivez le contrôle automatique du gain (cochez cette case si le volume de votre microphone ne cesse de changer)"
+   },
+   "disable_autofocus": {
+      "message": "Désactiver la mise au point automatique sur la zone de texte la plus proche lorsque la parole est entendue"
+   },
+   "disable_commands": {
+      "message": "Désactiver les commandes vocales (seule la parole en texte fonctionnera)"
+   },
+   "disable_commands_msg": {
+      "message": " Les commandes vocales sont désactivées dans les paramètres. "
+   },
+   "disable_edge_auto_punctuation": {
+      "description": "Version 1.6.3",
+      "message": "Désactiver la ponctuation automatique Microsoft Edge Chromium"
+   },
+   "disable_interim": {
+      "message": "Désactiver la bulle de dialogue jaune (seul le discours final s'affichera)"
+   },
+   "disable_speech2text": {
+      "message": "Désactiver la parole en texte (dictée)(seules les commandes vocales fonctionneront)"
+   },
+   "disable_speech2text_msg": {
+      "message": " La parole en texte (dictée) est désactivée dans les paramètres. "
+   },
+   "enable": {
+      "message": "Activer"
+   },
+   "enable_continuous_recognition": {
+      "description": "Version 1.6.3",
+      "message": "Désactiver le mode de reconnaissance vocale continue (fonctionne mieux pour certains utilisateurs mais pas pour d'autres)"
+   },
+   "end_beep": {
+      "message": "Jouer un bip après la détection de la parole"
+   },
+   "export_btn": {
+      "message": "Exportation"
+   },
+   "free_trial_msg": {
+      "message": "\n\t\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">Mise à niveau vers \u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span> Full\u003C/a>\u003Cbr> \n\t(Remarque&nbsp;: Si vous avez récemment acheté \" \u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span> Full \", vous devrez peut-être redémarrer Chrome et éventuellement votre ordinateur. - \u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">\n\tVoir Aide\u003C/a> )\n\t"
+   },
+   "free_trial_msg_settings": {
+      "message": "\n\t\t\t\u003Cb>Les paramètres suivants ne sont disponibles que dans la version complète de \" \u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span> \". \u003Cbr>\n\t\t\t\u003Ca href=\"https://www.seabreezecomputers.com/speech/subscription/\" data-lang-href=\"buy_link\">Acheter une mise à niveau vers \u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span> Complet\u003C/a>\u003C/b>\u003Cbr> \u003C!-- Version 1.5.4 - Added Purchase --> \n\t\t\t(Remarque&nbsp;: si vous avez récemment acheté \" \u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span> Full \", \n\t\t\t \u003Ca data-lang-href=\"support_free_trial_link\" href=\"https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial\">\n\t\t\tconsultez l'aide\u003C/a> )\n\t\t"
+   },
+   "import_btn": {
+      "message": "Importer"
+   },
+   "import_start": {
+      "message": "Start Import"
+   },
+   "import_type_append": {
+      "message": "Ajouter aux commandes personnalisées"
+   },
+   "import_type_overwrite": {
+      "message": "Écraser les commandes personnalisées"
+   },
+   "initializing": {
+      "message": "Initialisation..."
+   },
+   "instruction_video": {
+      "message": "Vidéo d'instructions"
+   },
+   "instructions_btn": {
+      "message": "Instructions"
+   },
+   "instructions_div": {
+      "message": "\n\t\t\t\u003Cli>Pour que la reconnaissance vocale fonctionne sur n'importe quelle page, gardez cet onglet ouvert en arrière-plan.\u003C/li>\n\t\t\t\u003Cli>Passez à n'importe quel autre onglet et commencez à parler.\u003C/li>\n\t\t\t\u003Cli>Pour arrêter la reconnaissance vocale, fermez cet onglet.\u003C/li>\n\t\t"
+   },
+   "language": {
+      "message": "Langue:"
+   },
+   "license": {
+      "message": "Licence"
+   },
+   "network_error": {
+      "message": "La réinstallation de Chrome ou la réalisation d'une \u003Ca href='https://support.google.com/chrome/answer/3296214'>réinitialisation Google Chrome\u003C/a> peut aider à corriger cette erreur."
+   },
+   "no": {
+      "message": "No"
+   },
+   "order_id": {
+      "message": "Numéro de commande: "
+   },
+   "order_status": {
+      "message": "Statut: "
+   },
+   "pause_for_audio": {
+      "message": "Pause \" \u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span> \" si l'audio joue dans un onglet"
+   },
+   "pause_for_audio_msg": {
+      "message": " La reconnaissance vocale est mise en pause jusqu'à ce que tous les onglets aient arrêté la lecture audio. (Voir Paramètres). "
+   },
+   "phrase": {
+      "message": "Phrase"
+   },
+   "prevent_display_sleep": {
+      "message": "Empêcher l'écran de dormir pendant l' écoute de \" \u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span> \""
+   },
+   "prevent_system_sleep": {
+      "message": "Empêcher le système de dormir pendant l' écoute de \" \u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span> \""
+   },
+   "prevent_system_sleep_msg": {
+      "message": "Remarque&nbsp;: À l'heure actuelle, les extensions Chrome ne peuvent pas interrompre un économiseur d'écran, mais elles peuvent rallumer l'écran lorsque la gestion de l'alimentation éteint l'écran. Donc, si vous voulez que l'écran se rallume avec votre voix, vous devrez désactiver votre économiseur d'écran."
+   },
+   "remove_auto_capitalize": {
+      "message": "Supprimer les majuscules automatiques de Google"
+   },
+   "sbc_link": {
+      "message": "https://www.seabreezecomputers.com/"
+   },
+   "select_voice": {
+      "message": "Voix: "
+   },
+   "settings_btn": {
+      "message": "Paramètres"
+   },
+   "shortcuts_key_msg": {
+      "message": "Peut être utilisé avec une configuration de touche de raccourci sur "
+   },
+   "signin": {
+      "message": "Connectez-vous au navigateur ou entrez le numéro de commande."
+   },
+   "speech_recognition_error": {
+      "message": "Erreur de reconnaissance vocale détectée: "
+   },
+   "sr_language": {
+      "message": "Langue actuelle de la reconnaissance vocale : "
+   },
+   "start_in_background": {
+      "message": "Démarrer \"\u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span>\" en arrière-plan"
+   },
+   "start_with_chrome": {
+      "message": "Démarrez \"\u003Cspan class=\"title\">Reconnaissance de la parole\u003C/span>\" when Chrome starts"
+   },
+   "submit_search_fields": {
+      "message": "Soumettre les champs de recherche automatiquement"
+   },
+   "support": {
+      "message": "Support"
+   },
+   "support_free_trial_link": {
+      "message": "https://www.seabreezecomputers.com/speech/support/#I_purchased_Speech_Recognition_Anywhere_but_it_still_shows_Free_Trial"
+   },
+   "support_link": {
+      "message": "https://www.seabreezecomputers.com/speech/support/"
+   },
+   "terms_btn": {
+      "message": "Conditions d'utilisation"
+   },
+   "terms_div": {
+      "message": "\n\t\t\u003Cp>En utilisant ce logiciel, vous acceptez d'être lié par les conditions d'utilisation disponibles sur \n\t\t \u003Ca href=\"https://www.seabreezecomputers.com/speech/terms/\" data-lang-href=\"terms_link\" target=\"_blank\">https://www.seabreezecomputers.com/speech/terms/\u003C/a> \n\t\tet par les conditions ci-dessous&nbsp;: \n\t\t\u003C/p>\u003Cp>Cette extension utilise l'API Web Speech de Google pour la reconnaissance vocale, donc si la reconnaissance vocale ne fonctionne pas bien, vous devrez en parler à Google. Sea Breeze Computers n'offre aucune garantie quant aux performances de ce produit ou au fonctionnement continu du service de reconnaissance vocale.\u003C/p>\n\t\t\u003Cp>EXCLUSION DE GARANTIES\n\t\t\u003C/p>\u003Cp>NOUS NE GARANTISSONS PAS QUE LE PRODUIT FONCTIONNERA DE LA MÊME FAÇON À L'AVENIR. VOUS N'AUREZ PAS DROIT À UN REMBOURSEMENT OU À UN CRÉDIT. CE PRODUIT EST FOURNI « EN L'ÉTAT » ET « SELON LA DISPONIBILITÉ », SANS AUCUNE GARANTIE D'AUCUNE SORTE. NOUS DÉCLINONS TOUTE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, SANS LIMITATION, LES GARANTIES D'EXACTITUDE, D'ABSENCE DE CONTREFAÇON, DE QUALITÉ MARCHANDE, D'ADAPTATION À UN USAGE PARTICULIER DANS TOUTE LA MESURE AUTORISÉE PAR LA LOI. NOUS DÉCLINONS TOUTE GARANTIE POUR LA SÉCURITÉ, L'EXACTITUDE, LES PERFORMANCES, LA QUALITÉ ET LES INFORMATIONS DE CE PRODUIT, SERVICE OU SITE WEB. NOUS NE GARANTISSONS PAS QUE LE SERVICE SERA SANS ERREUR OU QUE LE SERVICE SERA ININTERROMPU. NOUS ET NOS REPRÉSENTANTS, AGENTS, DIRIGEANTS, ADMINISTRATEURS ET EMPLOYÉS NE SOMMES RESPONSABLES D'AUCUNE ACTIONS, CONTENU OU DONNÉES PROVENANT DE TIERS ET VOUS NOUS DÉCHARGEZ DE TOUTES RÉCLAMATIONS ET DOMMAGES LIÉS À CES TIERS. VOUS ÊTES ENTIÈREMENT RESPONSABLE DE VOTRE UTILISATION DE CE PRODUIT.\n\t\t\u003C/p>\u003Cp>LIMITATIONS DE RESPONSABILITÉ\n\t\t\u003C/p>\u003Cp>NOUS DÉCLINONS TOUTE RESPONSABILITÉ QUANT À TOUTE UTILISATION DE CE PRODUIT. LE SERVICE FOURNI EST À UTILISER À VOS PROPRES RISQUES. EN AUCUN CAS NOUS, OU NOS DIRIGEANTS, EMPLOYÉS, PARTENAIRES, ADMINISTRATEURS OU FOURNISSEURS NE POURRONS ÊTRE TENUS RESPONSABLES ENVERS VOUS OU UN TIERS POUR TOUT DOMMAGE SPÉCIAL, ACCESSOIRE, DIRECT, INDIRECT, CONSÉCUTIF OU PUNITIF, Y COMPRIS CEUX RÉSULTANT D'UNE PERTE D'UTILISATION, DES DONNÉES OU DE LA PERTE DE BÉNÉFICES, QUE NOUS AVONS ÉTÉ AVERTIS OU NON DE LA POSSIBILITÉ DE TELS DOMMAGES OU SUR LA BASE DE TOUTE RUPTURE DE CONTRAT OU DE GARANTIE, DE NÉGLIGENCE OU DE TOUTE AUTRE RÉCLAMATION SURVENANT À LA SUITE DE L'UTILISATION DE CE PRODUIT OU SITE WEB. CET AVIS DE NON-RESPONSABILITÉ S'APPLIQUE ÉGALEMENT À TOUS LES SERVICES FOURNIS PAR LES ORDINATEURS DE SEA BREEZE ET LES PUBLICITÉS OU LES SERVICES OU PRODUITS DE TIERS FOURNIS PAR CE SERVICE OU SITE WEB.\n\t\u003C/p>"
+   },
+   "terms_link": {
+      "message": "https://www.seabreezecomputers.com/speech/terms/"
+   },
+   "title": {
+      "message": "Reconnaissance de la parole"
+   },
+   "tts_highlight": {
+      "message": "Surligner le texte en cours de lecture"
+   },
+   "tts_pitch": {
+      "message": "Terrain: "
+   },
+   "tts_rate": {
+      "message": "Taux: "
+   },
+   "tts_scroll": {
+      "message": "Faites défiler jusqu'au texte en cours de lecture"
+   },
+   "tts_settings": {
+      "message": "Paramètres de synthèse vocale"
+   },
+   "tts_simple": {
+      "message": "Mode simple (désactive la lecture détaillée des rôles ARIA et des noms de balise tels que \"bouton\" et \"lien hypertexte\")"
+   },
+   "tts_test_btn": {
+      "message": "Test"
+   },
+   "tts_test_speech": {
+      "message": "C'est un test."
+   },
+   "use_keypresses": {
+      "description": "Version 1.7.7",
+      "message": "Utilisez les touches pour envoyer du texte (fonctionne avec certains sites Web qui bloquent le collage)"
+   },
+   "use_wakeup_phrase": {
+      "message": "Utilisez la phrase de réveil par activation vocale&nbsp;: "
+   },
+   "use_wakeup_timeout": {
+      "message": "Exiger une nouvelle phrase de réveil uniquement s'il n'y a pas de parole pendant plus de 20 secondes"
+   },
+   "virtual_assistant_mode": {
+      "message": "Mode assistant virtuel"
+   },
+   "virtual_assistant_mode_msg": {
+      "message": "(En mode assistant virtuel, si cet onglet est actif ou si un onglet avec Google est actif, la parole prononcée qui ne figure pas dans la liste des commandes sera envoyée à l'assistant virtuel «&nbsp;Ok Google&nbsp;».)"
+   },
+   "wakeup_beep": {
+      "message": "Jouer un bip lorsque la phrase de réveil est détectée"
+   },
+   "wakeup_low_beep": {
+      "message": "Jouez un bip faible lorsque vous recherchez à nouveau la phrase de réveil"
+   },
+   "wakeup_phrase": {
+      "message": "(Exemples&nbsp;: «&nbsp;Ok Google&nbsp;» ou «&nbsp;Ordinateur&nbsp;»)"
+   },
+   "wakeup_phrase_msg": {
+      "message": " À l'écoute de la phrase d'activation: "
+   },
+   "yes": {
+      "message": "Yes"
+   }
+}

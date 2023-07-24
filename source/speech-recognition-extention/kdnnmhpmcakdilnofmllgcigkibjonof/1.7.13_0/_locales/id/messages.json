@@ -1,0 +1,38 @@
+{
+   "FREE_TRIAL": {
+      "description": "Free version",
+      "message": "Uji Coba Gratis"
+   },
+   "FREE_TRIAL_EXPIRED": {
+      "description": "Free version expired",
+      "message": "UJI COBA GRATIS BERAKHIR"
+   },
+   "FULL": {
+      "description": "Full version",
+      "message": "Penuh"
+   },
+   "Free": {
+      "description": "Free version",
+      "message": "Gratis"
+   },
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "Gunakan pengenalan suara untuk menulis Email dan dokumen. Kontrol Internet dengan pidato ke teks."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Pengenalan Ucapan Di Mana Saja"
+   },
+   "chrome_pages_error": {
+      "message": "CATATAN: Google tidak mengizinkan ekstensi Chrome berfungsi pada halaman \u003Cb> chrome:// \u003C/b> khusus atau Toko Web Chrome seperti halaman pada tab terakhir."
+   },
+   "chrome_runtime_error": {
+      "message": "CATATAN: Anda harus memuat ulang halaman web tempat Anda mencoba menggunakan pengenalan ucapan sebelum ekstensi ini berfungsi."
+   },
+   "network_error": {
+      "message": "Memasang ulang Chrome atau melakukan \u003Ca href='https://support.google.com/chrome/answer/3296214'> Setel Ulang \u003C/a> Chrome dapat membantu memperbaiki kesalahan ini."
+   },
+   "speech_recognition_error": {
+      "message": "Kesalahan pengenalan ucapan terdeteksi: "
+   }
+}

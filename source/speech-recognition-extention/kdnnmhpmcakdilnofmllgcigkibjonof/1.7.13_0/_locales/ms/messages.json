@@ -1,0 +1,38 @@
+{
+   "FREE_TRIAL": {
+      "description": "Free version",
+      "message": "Percubaan Percuma"
+   },
+   "FREE_TRIAL_EXPIRED": {
+      "description": "Free version expired",
+      "message": "PERCUBAAN PERCUMA TAMAT"
+   },
+   "FULL": {
+      "description": "Full version",
+      "message": "Penuh"
+   },
+   "Free": {
+      "description": "Free version",
+      "message": "Percuma"
+   },
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "Gunakan pengecaman pertuturan untuk menulis E-mel dan dokumen. Kawal Internet dengan suara anda."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Pengakuan Ucapan Di Mana Saja"
+   },
+   "chrome_pages_error": {
+      "message": "CATATAN: Google tidak membenarkan sambungan Chrome berfungsi pada halaman \u003Cb> chrome:// \u003C/b> khas atau Kedai Web Chrome seperti halaman pada tab terakhir."
+   },
+   "chrome_runtime_error": {
+      "message": ". CATATAN: Anda mesti memuatkan semula halaman web yang anda gunakan untuk menggunakan pengecaman pertuturan sebelum pelanjutan ini berfungsi."
+   },
+   "network_error": {
+      "message": "Memasang semula Chrome atau melakukan \u003Ca href='https://support.google.com/chrome/answer/3296214'> Tetapkan semula \u003C/a> Chrome dapat membantu memperbaiki ralat ini."
+   },
+   "speech_recognition_error": {
+      "message": "Ralat pengecaman pertuturan dikesan: "
+   }
+}

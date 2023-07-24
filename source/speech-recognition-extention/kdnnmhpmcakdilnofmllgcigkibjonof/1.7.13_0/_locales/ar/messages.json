@@ -1,0 +1,38 @@
+{
+   "FREE_TRIAL": {
+      "description": "Free version",
+      "message": "تجربة مجانية"
+   },
+   "FREE_TRIAL_EXPIRED": {
+      "description": "Free version expired",
+      "message": "انتهاء الفترة التجريبية المجانية"
+   },
+   "FULL": {
+      "description": "Full version",
+      "message": "كامل"
+   },
+   "Free": {
+      "description": "Free version",
+      "message": "مجاني"
+   },
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "استخدم التعرف على الصوت لملء النماذج وإملاء البريد الإلكتروني مع تحويل الكلام إلى نص. تحكم في الإنترنت باستخدام أوامر صوتية مخصصة!"
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "التعرف على الكلام في أي مكان"
+   },
+   "chrome_pages_error": {
+      "message": "ملاحظة: لا تسمح Google لإضافات Chrome بالعمل على صفحات \u003Cb> chrome:// \u003C/b> الخاصة أو على Chrome Webstore مثل الصفحة في علامة التبويب الأخيرة."
+   },
+   "chrome_runtime_error": {
+      "message": ". ملاحظة: يجب إعادة تحميل صفحة الويب التي كنت تحاول استخدام التعرف على الكلام عليها قبل أن يعمل هذا الامتداد عليها."
+   },
+   "network_error": {
+      "message": "إعادة تثبيت Chrome أو إجراء \u003Ca href='https://support.google.com/chrome/answer/3296214'> إعادة تعيين \u003C/a> في Chrome قد يساعد في إصلاح هذا الخطأ."
+   },
+   "speech_recognition_error": {
+      "message": "تم اكتشاف خطأ في التعرف على الكلام: "
+   }
+}

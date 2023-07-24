@@ -1,0 +1,31 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>New Tab Redirect</title>
+</head>
+
+<body>
+<!-- content script will not run in chrome://newtab
+So we add to manifest.json:
+
+"chrome_url_overrides": {
+    	"newtab": "newtab.html"
+	},
+
+and then here we redirect to: https://www.google.com/_/chrome/newtab
+
+But does not work. Get this error:
+Refused to execute inline script because it violates the following Content Security Policy 
+directive: "script-src 'self' blob: filesystem: chrome-extension-resource:". Either the 
+'unsafe-inline' keyword, a hash ('sha256-NybgsWnsi+LiwWU9qVqjq1O/i078LTDjLeArzRcLhZM='), 
+or a nonce ('nonce-...') is required to enable inline execution.
+-->
+
+<script type="text/javascript">
+window.location.href = "https://www.google.com/_/chrome/newtab";
+
+</script>
+
+</body>
+</html>

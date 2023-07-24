@@ -1,0 +1,180 @@
+body
+{
+	min-width: 400px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em; /* Version 1.7.2 - Was not here before and defaulting to 12px */
+}
+h1 {
+	vertical-align: top;
+}
+.submenu
+{
+	margin-left: 1em;
+	background-color: #F0F0F0;
+	display: block; /* Version 1.5.6 - From none to block */
+}
+.subsubmenu
+{
+	margin-left: 1em;
+	background-color: #F0F0F0;
+}
+.submenu_btn { /* Version 1.5.6 - For details, summary tags */
+	background-color: #efefef;
+	font-size: 1.2em;
+	width: 20em;
+	color: black;
+	border: 1px solid black; /* Version 1.7.6 - From 2px to 1px to see outline when tabbed to */
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	cursor: pointer;
+	user-select: none;
+}
+.submenu_btn:hover { /* Version 1.5.6 */
+	background-color: #dfdfdf;
+}
+#title, #license_msg /* Version 1.5.6 - Added , #license_msg */
+{
+	vertical-align: top;
+	color: #000000;
+	text-decoration: none;
+}
+.footer
+{
+	/*margin-top:1em;*/ /* Version 1.7.6 - Removed */
+	/* height: 3em; */ /* Version 1.6.5 - Removed */
+	text-align: center;
+	background-color: #CCCCCC;
+}
+@media (prefers-color-scheme: dark) { 	/* Version 1.4.0 */
+	body, input, select, button, #title, .submenu_btn, #license_msg { /* Version 1.6.2 - Added , #license_msg */
+		background-color: black;
+		color: white;
+	}
+	.submenu, .subsubmenu {
+		background-color: #111111;
+	}
+	.submenu_btn:hover { /* Version 1.6.2 */
+		background-color: #808080;
+	}
+	iframe, .footer {
+		background-color: #555555;
+	}
+	a:link { color: #0033ff; }
+	a:visited { color: #aa66ff; }
+	a:hover { color: #ff5555; }
+}
+h1
+{
+	font-size: 1.5em;
+	-webkit-margin-before:0em;
+	-webkit-margin-after:0em;
+	margin: 0px;
+	padding: 2px;
+	border: 1px solid black;
+	text-align: center;
+	cursor: pointer;
+}
+h1 a
+{
+	text-decoration: none;
+}
+p
+{
+	margin: .5em;
+}
+.button
+{
+	font-size: 1.2em;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 2px;
+	margin: 2px;
+	font-family: "Courier New", Courier, monospace;
+	cursor: pointer;
+}
+.error
+{
+	color: red;
+	font-weight: bold;
+}
+#speech_iframe /* Version 1.7.6 */
+{
+	border: 0px solid red; 
+	width: 90%;
+	height: 7em;
+	overflow: scroll;
+}
+#speech_div
+{
+	border: 1px solid red;
+	width: 100%; /* Version 1.7.6 - From 90% to 100% */
+	height: 6em; /* Version 1.7.6 - From 7em to 6em */
+	/* outline: none;*/ /* Version 1.7.6 - Or it gets an outline only when focused and iframe is focused */
+	padding: 2px; /* Version 1.7.6 - Added */
+	overflow: auto; /* Version 1.7.6 - From scroll to auto */
+}
+#sr_sound_level_container
+{
+	border: 1px solid black;
+	width: 100px; /* Version 1.4.9 - Changed from 300px to 200px */ /* Version 1.6.5 - From 200 to 100px */
+	margin: 1px;
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+#sr_sound_level
+{
+	background-color: #FF0000;
+	width: 0px;
+	height: 1em;
+}
+th
+{
+	background-color: #62B0B0;
+}
+td
+{
+	border: 1px solid black;
+	padding: 5px;
+}
+#custom_commands_div
+{
+	width: 90%;
+}
+.custom_commands_box
+{
+	border: 1px solid black;
+	padding: 5px;
+}
+.custom_commands_box input[type="text"]
+{
+	min-width: 40%;
+}
+.footer span
+{
+	display: inline-block;
+	/* min-width: 25em; */ /* Version 1.6.5 - Removed */
+	margin-right: 3em; /* Version 1.6.5 - Added */
+	line-height: 2em; /* Version 1.7.6 - From 3em to 2em */
+}
+.status {
+	width: 36em; /* Version 1.4.1 from fontSize Changer */
+}
+#final_span {
+	outline-width: 0; /* Version 1.4.9 */
+}
+.free_trial_msg {
+	padding: .2em 1em; /* Version 1.4.9 */
+}
+.offscreen { /* Version 1.5.6 - To display data-lang="days_left" offscreen */
+	position: absolute;
+	left: -500px;
+	top: -100px;
+	width: 300px;
+	display: inline-block;
+}
+.tts_box { /* Version 1.5.8 - To make tts rate and pitch line up */
+	display: inline-block;
+	width: 5em;
+}

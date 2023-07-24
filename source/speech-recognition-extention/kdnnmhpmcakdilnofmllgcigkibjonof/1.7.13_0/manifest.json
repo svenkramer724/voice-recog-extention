@@ -1,0 +1,51 @@
+{
+   "action": {
+      "default_icon": "images/microphone38.png",
+      "default_title": "__MSG_appName__"
+   },
+   "author": "Jeff Baker",
+   "background": {
+      "service_worker": "background.js"
+   },
+   "commands": {
+      "_execute_action": {
+         "description": "Open",
+         "suggested_key": {
+            "default": "Alt+S"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [  ],
+      "js": [ "storage.js", "content.js", "keypress.js", "googleDocsUtil.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset_1",
+         "path": "rule1.json"
+      } ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "host_permissions": [ "*://www.seabreezecomputers.com/*", "*://seabreezecomputers.com/*", "*://192.168.1.5/*", "\u003Call_urls>" ],
+   "icons": {
+      "128": "images/microphone128.png",
+      "16": "images/microphone16.png",
+      "48": "images/microphone48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiEjqvsFz2nJj+93HY51mT7bnM765gZEuv+j9XcoXAfDJmd8AY2KK7o93hnyi1LUbA6ijQHsqziBbSpzppaI5gERSA5o4XeP8SfvazFwMDZMMFLuHNgpw7f1E0Tl7Db27LEPxfrYYPoV9BoOmeQIOSJw78fB06nCtuLvEsew5XVzEvzWJ2RmzcL/+39pZBwYAaRLeYwYHgR7qxpdBYyzk/5kkZ/70QmlKTPJ2Gxrsaam34ENKBswk+WAzu7CkhqoBJgcgOqQHITsZekGwsbxWJwb30Bd103j/zrwDFWicshTDwgKpGUXtVHnunl/K39yiok2GxDqHWX0XzsGFhC5CuQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "oauth2": {
+      "client_id": "767741953283-p884ke9l5gavqk2f0a5m7bgjstmvpbm8.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/chromewebstore.readonly" ]
+   },
+   "permissions": [ "scripting", "declarativeNetRequest", "declarativeNetRequestFeedback", "identity", "identity.email", "tabs", "clipboardWrite", "clipboardRead", "storage", "unlimitedStorage", "activeTab", "idle", "power" ],
+   "short_name": "__MSG_shortName__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.7.13"
+}

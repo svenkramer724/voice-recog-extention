@@ -1,0 +1,162 @@
+.cool_social_div
+{
+	font-family: arial;
+	/* max-width: 6em; */ /* uncomment max-width: 6em for vertical buttons */
+}
+.vertical_buttons .cool_social_button
+{
+	/* max-width: 6em; */ /* This will do vertical buttons by setting max-width to width of buttons */
+	display: block;	/* Or this will do vertical buttons by setting display to block instead of inline-block */
+}
+.cool_social_button
+{
+	border: 1px solid black; 
+	cursor: pointer; 
+	display: inline-block; 
+	width: 6em; 
+	text-align: center;
+	position: relative;
+	margin: 5px 2px;
+}
+.cool_social_button a
+{
+	text-decoration: none;	
+	color: inherit;
+	display:block; 
+	height:100%;
+}
+.bubble_top
+{
+	margin-top: 1.5em;	
+}
+.bubble_top .cool_social_count
+{
+	color: black;
+	font-family: arial;
+	background-color: white;
+	border: 1px solid black;
+	position: absolute;
+	z-index: 1;
+	top: -1.6em;
+	width: 3em;
+	left: 50%;
+	margin-left: -1.5em; /* Use half of width to center */
+}
+.bubble_top .cool_social_count::before 
+{
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.bubble_top .cool_social_count::after 
+{
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+.bubble_right
+{
+	margin-right: 4em;
+}
+.bubble_right .cool_social_count 
+{
+    color: black;
+	font-family: arial;
+	background-color: white;
+	border: 1px solid black;
+	position: absolute;
+	z-index: 1;
+	width: 3em;
+	left: 108%;
+	top: -1px;
+}
+.bubble_right .cool_social_count::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+.bubble_right .cool_social_count::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+.cool_social_google
+{
+	background: #ffffff;
+	color: #000000;
+}
+.cool_social_google:hover
+{
+	background: #eeeeee;
+}
+.cool_social_twitter
+{
+	background: #1B95E0;
+	color: white;	
+}
+.cool_social_twitter:hover
+{
+	background: #0C7ABF;
+}
+.cool_social_facebook
+{
+	background: #405BA8;
+	color: white;
+}
+.cool_social_facebook:hover
+{
+	background: #4E6CBD;
+}
+.cool_social_f
+{
+	background-color: white;
+	color: #405BA8;
+	padding: 0px 0px 0px 10px;
+    margin: 5px;
+}
+.cool_social_linkedin
+{
+	background-color: #0077B5;
+	color: white;	
+}
+.cool_social_linkedin:hover
+{
+	background-color: #0369A0;
+}
+.cool_social_in
+{
+	text-shadow: 0 -1px 4px rgb(255, 255, 255);
+	border-right: 1px solid black;
+	padding-right: 5px;
+}
+.cool_social_pinterest
+{
+	background: white;
+	color: #BD081C;
+	font-family: Georgia, serif;
+	letter-spacing: -2px;
+}
+.cool_social_pinterest:hover
+{
+	background: #eeeeee;
+}
